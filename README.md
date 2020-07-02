@@ -1,2 +1,2 @@
 # WebRTCKurento
-This is a WebRTC framework use Kurento Media Server
+This is a WebRTC framework use Kurento Media Server, using websocket
