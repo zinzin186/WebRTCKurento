@@ -8,7 +8,6 @@ target 'LiveStreamDemo' do
   # Pods for LiveStreamDemo
     pod 'Starscream'
     pod 'KurentoToolbox'
-    pod 'WebRTCKurento'
     
   target 'LiveStreamDemoTests' do
     inherit! :search_paths

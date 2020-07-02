@@ -33,22 +33,19 @@ PODS:
   - SBJson (4.0.5)
   - SocketRocket (0.4.2)
   - Starscream (4.0.3)
-  - WebRTCKurento (1.0.0)
 
 DEPENDENCIES:
   - KurentoToolbox
   - Starscream
-  - WebRTCKurento
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
-    - Starscream
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - CocoaLumberjack
     - KurentoToolbox
     - SBJson
     - SocketRocket
-    - WebRTCKurento
+  trunk:
+    - Starscream
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
@@ -56,8 +53,7 @@ SPEC CHECKSUMS:
   SBJson: af3137ccda22be3004487524da0a071c75d4251b
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   Starscream: ef06f0961fff0880bca0604416d61141e4faca67
-  WebRTCKurento: 4e183ab9d5723c5ba0dfef78d1b5df090eb5c801
 
-PODFILE CHECKSUM: b32863726743695cf2c9d9876ca3e73b27358464
+PODFILE CHECKSUM: 2c49c9033dcf6c8117f431df023e60881572d353
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3

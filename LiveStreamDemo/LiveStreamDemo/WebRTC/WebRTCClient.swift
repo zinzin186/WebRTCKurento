@@ -36,7 +36,7 @@ class WebRTCClient: NSObject{
     private let webSocket: SRWebSocket
     override init() {
         
-        let url = URL(string: "https://192.168.51.18:8443/one2many")
+        let url = URL(string: "https://192.168.1.157:8443/one2many")
         let webSocket = SRWebSocket(url: url!, protocols: ["chat"])
         let queue = DispatchQueue.init(label: "eu.nubomedia.websocket.processing", qos: .background, attributes: .concurrent, autoreleaseFrequency: .never, target: nil)
         webSocket?.setDelegateDispatchQueue(queue)
