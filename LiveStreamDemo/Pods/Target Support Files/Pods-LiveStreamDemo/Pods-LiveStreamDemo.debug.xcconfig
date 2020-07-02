@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack" "${PODS_CONFIGURATION_BUILD_DIR}/KurentoToolbox" "${PODS_CONFIGURATION_BUILD_DIR}/SBJson" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream" "${PODS_ROOT}/KurentoToolbox"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack" "${PODS_CONFIGURATION_BUILD_DIR}/KurentoToolbox" "${PODS_CONFIGURATION_BUILD_DIR}/SBJson" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream" "${PODS_CONFIGURATION_BUILD_DIR}/WebRTCKurento" "${PODS_ROOT}/KurentoToolbox"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/KurentoToolbox/KurentoToolbox.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SBJson/SBJson.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/KurentoToolbox/KurentoToolbox.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SBJson/SBJson.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WebRTCKurento/WebRTCKurento.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"icucore" -framework "CFNetwork" -framework "CocoaLumberjack" -framework "KurentoToolbox" -framework "SBJson" -framework "Security" -framework "SocketRocket" -framework "Starscream" -framework "WebRTC"
+OTHER_LDFLAGS = $(inherited) -l"icucore" -framework "CFNetwork" -framework "CocoaLumberjack" -framework "KurentoToolbox" -framework "SBJson" -framework "Security" -framework "SocketRocket" -framework "Starscream" -framework "WebRTC" -framework "WebRTCKurento"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
