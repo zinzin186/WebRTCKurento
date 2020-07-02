@@ -60,6 +60,8 @@ function presenterResponse(message) {
 		console.warn('Call not accepted for the following reason: ' + errorMsg);
 		dispose();
 	} else {
+		console.log('#############')
+		console.log(message)
 		webRtcPeer.processAnswer(message.sdpAnswer);
 	}
 }
@@ -158,7 +160,7 @@ function dispose() {
 
 function sendMessage(message) {
 	var jsonMessage = JSON.stringify(message);
-	console.log('Senging message: ' + jsonMessage);
+	console.log('Sending message: ' + jsonMessage);
 	ws.send(jsonMessage);
 }
 

@@ -338,10 +338,10 @@
 		8298B94F042405C38E443F581EDFC974 /* NBMEAGLVideoViewContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMEAGLVideoViewContainer.m; path = Classes/WebRTC/NBMEAGLVideoViewContainer.m; sourceTree = "<group>"; };
 		84B90A927947FA2BA55B70F33969A0D7 /* NBMWebRTCPeer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMWebRTCPeer.h; path = Classes/WebRTC/NBMWebRTCPeer.h; sourceTree = "<group>"; };
 		84D06B8F83539515E6D7DD7F3F9054FB /* NBMMediaConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMMediaConfiguration.m; path = Classes/WebRTC/NBMMediaConfiguration.m; sourceTree = "<group>"; };
-		85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketRocket.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		879A91DB4FBDB2BB8A46B51A56722079 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SocketRocket.modulemap; sourceTree = "<group>"; };
 		879ED9235BA82D1548659526D3D1327C /* NBMRoomClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomClient.h; path = Classes/Room/NBMRoomClient.h; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89651322624454F8324A88E3B25D42C7 /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParserState.h; path = Classes/SBJson4StreamParserState.h; sourceTree = "<group>"; };
 		8D1F20DE4A0A2A42D407C53347F74E65 /* NBMJSONRPCError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMJSONRPCError.m; path = "Classes/JSON-RPC/Internals/NBMJSONRPCError.m"; sourceTree = "<group>"; };
 		8D97A96816AA9C260B0CDA18CD8E1187 /* NBMRoomConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomConstants.h; path = Classes/Room/NBMRoomConstants.h; sourceTree = "<group>"; };
@@ -351,13 +351,13 @@
 		919011E665E7FBA43CDF1088CDCA08B7 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
 		94B1D3CAE094EB8407808BB5F3E2E819 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
 		955F9BB3638792F383B4BD2C9841C472 /* Pods-LiveStreamDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveStreamDemoTests-dummy.m"; sourceTree = "<group>"; };
-		95ACE584A4BCB6B75785B9245E4033C1 /* Pods_LiveStreamDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveStreamDemoTests.framework; path = "Pods-LiveStreamDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95ACE584A4BCB6B75785B9245E4033C1 /* Pods_LiveStreamDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreamDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A0DCA3922A110B909A364BA726ADA0 /* WebRTCKurento-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebRTCKurento-prefix.pch"; sourceTree = "<group>"; };
 		993EF7C80FB9E88EC515DB2095BF61CA /* SBJson4Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4Parser.h; path = Classes/SBJson4Parser.h; sourceTree = "<group>"; };
 		996D4C37097DDFADDD203BCEA9EECBAF /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		9CA75805D8D5111775FD90E09FEAA61C /* NBMJSONRPCClientError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMJSONRPCClientError.m; path = "Classes/JSON-RPC/Internals/NBMJSONRPCClientError.m"; sourceTree = "<group>"; };
 		9CCBC5548E0B78445F2724D79BDA788C /* NBMPeer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMPeer.h; path = Classes/Room/NBMPeer.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0E9A97FE7959801D50741ED442782C2 /* NBMTreeEndpoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMTreeEndpoint.m; path = Classes/Tree/NBMTreeEndpoint.m; sourceTree = "<group>"; };
 		A23447071E7D41AFBE255D79FE167E37 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
 		A4EC37B27362C73C3B1F46EF8D9F6872 /* Pods-LiveStreamDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveStreamDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -389,9 +389,9 @@
 		C03D448018F3E886C15E11806C30E820 /* SBJson4StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriter.h; path = Classes/SBJson4StreamWriter.h; sourceTree = "<group>"; };
 		C0518B37279D771A425DE73F1A497CA0 /* RTCMediaStream+Configuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RTCMediaStream+Configuration.m"; path = "Classes/WebRTC/Internals/RTCMediaStream+Configuration.m"; sourceTree = "<group>"; };
 		C097839A090E45D84386A1AFEC4041FC /* NBMTimeoutable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMTimeoutable.m; path = "Classes/JSON-RPC/Internals/NBMTimeoutable.m"; sourceTree = "<group>"; };
-		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BD662E39A6BBCDE754ABB13F05987B /* NBMPeerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMPeerConnection.h; path = Classes/WebRTC/NBMPeerConnection.h; sourceTree = "<group>"; };
-		C4548EAA9E16978CD06867FCD637EC1A /* WebRTCKurento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WebRTCKurento.framework; path = WebRTCKurento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4548EAA9E16978CD06867FCD637EC1A /* WebRTCKurento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebRTCKurento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C556DE2975DED3C9154EF632A5B5A6B0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		C7DE42E92F4E6F4D14529C52696DB121 /* Pods-LiveStreamDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveStreamDemo-Info.plist"; sourceTree = "<group>"; };
 		CAF3763AC17BFE2E98A4BEF27FCEEF36 /* NBMRoomConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRoomConstants.m; path = Classes/Room/NBMRoomConstants.m; sourceTree = "<group>"; };
@@ -409,12 +409,12 @@
 		D5C373A9D37C4FEC47A836BD9840312A /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
 		D9A9E9FA45CBF95E475EFA92FF22EBF1 /* NBMSessionDescriptionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMSessionDescriptionFactory.h; path = Classes/WebRTC/Internals/NBMSessionDescriptionFactory.h; sourceTree = "<group>"; };
 		DAECF6EFEB12096377BA25F84F55FB34 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
-		DDF6A31DFFDAE17F80A34E666AA79832 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SBJson.framework; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF6A31DFFDAE17F80A34E666AA79832 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1416526462F8F4207F8A8154322AF4C /* SBJson4Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4Writer.m; path = Classes/SBJson4Writer.m; sourceTree = "<group>"; };
 		E1475D3E3721A3C9E3D096DC89DA2B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E3276AE44717CE06FF4C698B0DE85388 /* NBMJSONRPCClientError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMJSONRPCClientError.h; path = "Classes/JSON-RPC/Internals/NBMJSONRPCClientError.h"; sourceTree = "<group>"; };
 		E47E075AD08EB960B3BCAD6983C43BD0 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
-		E578B49E13D245D016F841FA0C8595A1 /* Pods_LiveStreamDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveStreamDemo.framework; path = "Pods-LiveStreamDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E578B49E13D245D016F841FA0C8595A1 /* Pods_LiveStreamDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreamDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E5B26902FD27CD19A086EB7BA4BA5D /* Pods-LiveStreamDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveStreamDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E62FD37926562CC5415BEF3473A739CF /* NBMWebRTCPeer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMWebRTCPeer.m; path = Classes/WebRTC/NBMWebRTCPeer.m; sourceTree = "<group>"; };
 		E7A73A80D2D4D22F10FF3ABDC55CF721 /* KurentoToolbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KurentoToolbox-umbrella.h"; sourceTree = "<group>"; };
@@ -427,7 +427,7 @@
 		F0B1CB7F3D28A7708EF726F86333BA8B /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
 		F0F644DCECE39133D11A8588A6B6DF23 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
 		F12F0A2110E7564AC2642520A55F341D /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = WebRTCKurento/WebRTCKurento/Service.swift; sourceTree = "<group>"; };
-		F18D75E9DBD0F985F8A2541B8853F492 /* KurentoToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KurentoToolbox.framework; path = KurentoToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18D75E9DBD0F985F8A2541B8853F492 /* KurentoToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KurentoToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32B3786D4C574A5F3F4E81746F858DE /* Room.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Room.h; path = Classes/Room/Room.h; sourceTree = "<group>"; };
 		F41974033EE4D16F904469FF5815EAF3 /* NBMRoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoom.h; path = Classes/Room/NBMRoom.h; sourceTree = "<group>"; };
 		F597F7D515BA6811D9CEBF638C8C526E /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
@@ -594,7 +594,6 @@
 				BF4DE27F6B8FC274A40C1776BEBC771B /* WSEngine.swift */,
 				BE3F2C8378F78F0E771FB934AE2A5FAA /* Support Files */,
 			);
-			name = Starscream;
 			path = Starscream;
 			sourceTree = "<group>";
 		};
@@ -625,7 +624,6 @@
 				097C689CAA781B8B09AA8A964463B67A /* WebRTCKurento.h */,
 				F1FCEADBB53DFE1CD82F0A39349B931B /* Support Files */,
 			);
-			name = WebRTCKurento;
 			path = WebRTCKurento;
 			sourceTree = "<group>";
 		};
@@ -665,7 +663,6 @@
 				A9FE1B82BBC2BCCE31D412286F7E700D /* SRWebSocket.m */,
 				87E72D73C77C1956F5B95B5B637E8E29 /* Support Files */,
 			);
-			name = SocketRocket;
 			path = SocketRocket;
 			sourceTree = "<group>";
 		};
@@ -801,7 +798,6 @@
 				F2F193FF86A5DD61A9C893907BCF35EF /* Extensions */,
 				6F4BBFA75B45C0A5830BC4EC2185F0ED /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -881,7 +877,6 @@
 				78F43EBA8754B67E001FACE499F83CB0 /* Tree */,
 				AF846F9105ECF9E8A5B0908AEC15A29A /* Utils */,
 			);
-			name = KurentoToolbox;
 			path = KurentoToolbox;
 			sourceTree = "<group>";
 		};
@@ -939,7 +934,6 @@
 				E1416526462F8F4207F8A8154322AF4C /* SBJson4Writer.m */,
 				7B082FD6CB52421595FB8F6576B6FD2E /* Support Files */,
 			);
-			name = SBJson;
 			path = SBJson;
 			sourceTree = "<group>";
 		};
@@ -1801,6 +1795,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/KurentoToolbox/KurentoToolbox-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2228,6 +2223,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/KurentoToolbox/KurentoToolbox-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
