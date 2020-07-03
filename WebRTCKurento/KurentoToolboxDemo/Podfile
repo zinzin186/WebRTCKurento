@@ -1,0 +1,10 @@
+target 'KurentoToolboxDemo' do
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+pod 'KurentoToolbox', '~> 0.6.0'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'DGActivityIndicatorView'
+pod 'Masonry'
+pod 'Reachability'
+end
