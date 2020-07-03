@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
 
   s.author = { "Marco Rossi" => "marco5.rossi@guest.telecomitalia.it" }
   s.platform = :ios, "8.0"
-
   s.source       = { :git => "https://github.com/zinzin186/WebRTCKurento.git", :tag => "v#{s.version}" }
 
   s.default_subspecs = 'Default'
