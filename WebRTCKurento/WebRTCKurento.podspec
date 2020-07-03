@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.3"
   spec.source       = { :git => "https://github.com/zinzin186/WebRTCKurento.git", :tag => "#{spec.version}" }
   spec.swift_version = "4.0"
-  spec.source_files  = "WebRTCKurento/**/*.{h,m,swift}"
+  spec.source_files  = "WebRTCKurento/**/*"
   
 
 end
