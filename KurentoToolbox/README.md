@@ -1,6 +1,6 @@
 [![][NUBOMEDIA Logo]][NUBOMEDIA]
 
-Copyright © 2016 [NUBOMEDIA]. Licensed under [Apache 2.0 License]
+Copyright © 2016 [NUBOMEDIA]. Licensed under [Apache 2.0 License].
 
 # Kurento Toolbox for iOS
 [![Build Status](https://travis-ci.org/nubomediaTI/Kurento-iOS.svg?branch=master)](https://travis-ci.org/nubomediaTI/Kurento-iOS)

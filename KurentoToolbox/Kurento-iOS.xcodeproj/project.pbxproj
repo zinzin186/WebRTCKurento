@@ -85,6 +85,7 @@
 		4D1677092376B4FF003CEF57 /* NBMSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1677022376B4FF003CEF57 /* NBMSettingsStore.h */; };
 		564D8A141D1942C300676AAC /* libPods-KurentoToolbox-Static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D8A131D1942C300676AAC /* libPods-KurentoToolbox-Static.a */; };
 		906DAEC72978BBC1459132C9 /* libPods-KurentoToolbox-Static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A44AD8017DB368676764B11 /* libPods-KurentoToolbox-Static.a */; };
+		96B9CB9724AF9A6A0022FADE /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B9CB9624AF9A690022FADE /* WebRTC.framework */; };
 		CF748A736A49BD58460593DD /* libPods-KurentoToolbox-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDE223912EC939E9DA6EBE1 /* libPods-KurentoToolbox-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		7BDE223912EC939E9DA6EBE1 /* libPods-KurentoToolbox-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KurentoToolbox-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF37E20A6732B0B0F77FAF /* Pods-KurentoToolbox-Static.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoToolbox-Static.release.xcconfig"; path = "Pods/Target Support Files/Pods-KurentoToolbox-Static/Pods-KurentoToolbox-Static.release.xcconfig"; sourceTree = "<group>"; };
 		8A44AD8017DB368676764B11 /* libPods-KurentoToolbox-Static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KurentoToolbox-Static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B9CB9624AF9A690022FADE /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		A12150DDAE525A3594636BC8 /* Pods-KurentoToolbox-Static.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoToolbox-Static.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KurentoToolbox-Static/Pods-KurentoToolbox-Static.debug.xcconfig"; sourceTree = "<group>"; };
 		D0C7C1936F109C5D3E1CFA64 /* Pods-KurentoToolbox-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoToolbox-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KurentoToolbox-Tests/Pods-KurentoToolbox-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0644359EAD1857DA6D37FA /* Pods-KurentoToolbox-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoToolbox-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KurentoToolbox-Tests/Pods-KurentoToolbox-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				4A6E88DF1C105435000A8EE9 /* UIKit.framework in Frameworks */,
 				4A6E88DD1C10542D000A8EE9 /* Foundation.framework in Frameworks */,
 				564D8A141D1942C300676AAC /* libPods-KurentoToolbox-Static.a in Frameworks */,
+				96B9CB9724AF9A6A0022FADE /* WebRTC.framework in Frameworks */,
 				906DAEC72978BBC1459132C9 /* libPods-KurentoToolbox-Static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				564D8A131D1942C300676AAC /* libPods-KurentoToolbox-Static.a */,
+				96B9CB9624AF9A690022FADE /* WebRTC.framework */,
 				4A4F0C8F1C158B5300CD30A1 /* CoreMedia.framework */,
 				4A6E88DE1C105435000A8EE9 /* UIKit.framework */,
 				4A6E88DC1C10542D000A8EE9 /* Foundation.framework */,
@@ -691,6 +695,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/**",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Framework/Kurento-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -717,6 +722,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/**",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Framework/Kurento-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

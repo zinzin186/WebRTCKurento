@@ -1,0 +1,73 @@
+PODS:
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - DGActivityIndicatorView (2.1.1)
+  - KurentoToolbox (0.6.0):
+    - KurentoToolbox/Default (= 0.6.0)
+  - KurentoToolbox/Default (0.6.0):
+    - KurentoToolbox/JSON-RPC
+    - KurentoToolbox/Room
+    - KurentoToolbox/Tree
+    - KurentoToolbox/WebRTC
+  - KurentoToolbox/JSON-RPC (0.6.0):
+    - KurentoToolbox/Utils
+    - SBJson (~> 4.0.2)
+    - SocketRocket (~> 0.4.1)
+  - KurentoToolbox/Room (0.6.0):
+    - KurentoToolbox/JSON-RPC
+    - KurentoToolbox/Utils
+    - KurentoToolbox/WebRTC
+  - KurentoToolbox/Tree (0.6.0):
+    - KurentoToolbox/JSON-RPC
+    - KurentoToolbox/Utils
+    - KurentoToolbox/WebRTC
+  - KurentoToolbox/Utils (0.6.0):
+    - CocoaLumberjack (~> 2.2.0)
+  - KurentoToolbox/WebRTC (0.6.0):
+    - KurentoToolbox/Utils
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - Reachability (3.2)
+  - SBJson (4.0.5)
+  - SocketRocket (0.4.2)
+
+DEPENDENCIES:
+  - DGActivityIndicatorView
+  - KurentoToolbox (from `/My Data/Souce/Framework/KurentoToolbox`)
+  - Masonry
+  - MBProgressHUD (~> 1.0.0)
+  - Reachability
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - DGActivityIndicatorView
+    - Masonry
+    - MBProgressHUD
+    - Reachability
+    - SBJson
+    - SocketRocket
+
+EXTERNAL SOURCES:
+  KurentoToolbox:
+    :path: "/My Data/Souce/Framework/KurentoToolbox"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  KurentoToolbox: c1b369e2a77bd6124c95d554ddf3911b8986aaa9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SBJson: af3137ccda22be3004487524da0a071c75d4251b
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+
+PODFILE CHECKSUM: 1bde85393b01f7108bbfa64e12f05d4a1e1331ed
+
+COCOAPODS: 1.9.3
