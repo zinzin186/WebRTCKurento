@@ -1,6 +1,0 @@
-framework module KurentoToolbox {
-  umbrella header "KurentoToolbox-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,7 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-LiveStreamDemo/Pods-LiveStreamDemo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
-${BUILT_PRODUCTS_DIR}/KurentoToolbox/KurentoToolbox.framework
-${PODS_ROOT}/KurentoToolbox/WebRTC.framework
-${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework
-${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework
-${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
