@@ -50,7 +50,7 @@ DEPENDENCIES:
   - SocketRocket (~> 0.4.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - CocoaLumberjack
     - DGActivityIndicatorView
     - GoogleWebRTC
@@ -77,4 +77,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 797a1262444dcd7c25a995637ae7fb058471af2c
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.3

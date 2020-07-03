@@ -1,19 +1,19 @@
 Pod::Spec.new do |s|
 
-  s.name         = "nighthawk-webrtc"
-  s.version      = "45"
+  s.name         = "WebRTCKurento"
+  s.version      = "1.0.0"
   s.platform     = :ios, '7.0'
   s.summary      = "Pre-compiled library for libWebRTC."
 
-  s.homepage     = "www.perch.co"
-  s.author       = { "Chris Eagleston" => "chris@perch.co" }
+  s.homepage     = "https://github.com/zinzin186/WebRTCKurento"
+  s.author       = { "Zinzin" => "vudinhdin@gmail.com.vn" }
 
-  s.source       = { :http => "https://s3.amazonaws.com/perch-pods/webrtc-ios-chrome-m45-capture-xcode.zip" }
+  s.source       = { :http => "https://github.com/arikhalperin/KurentoIosLatestWebrtc.git" }
 
   s.source_files  = "include/talk/app/webrtc/*.h", "include/talk/app/webrtc/objc/**/*.h", "include/third_party/libyuv/include/**/*.h", "include/webrtc/video_frame.h", "include/webrtc/typedefs.h", "include/webrtc/common_types.h", "include/webrtc/base/*.h", "include/webrtc/common_video/**/*.h", "include/webrtc/modules/interface/*.h", "include/webrtc/modules/video_capture/**/*.h", "include/webrtc/p2p/base/*.h", "include/webrtc/system_wrappers/interface/*.h", "include/webrtc/system_wrappers/source/*.h", "include/talk/media/base/*.h", "include/talk/media/webrtc/*.h", "include/talk/session/media/*.h", "include/talk/p2p/base/*.h", "include/talk/xmllite/*.h", "include/talk/media/devices/*.h"
   s.exclude_files = "include/talk/examples"
 
-  s.requires_arc = true 
+  s.requires_arc = true
   s.frameworks   = 'QuartzCore', 'OpenGLES', 'GLKit', 'CoreAudio', 'CoreMedia', 'CoreVideo', 'AVFoundation', 'AudioToolbox', 'UIKit', 'Foundation', 'CoreGraphics', 'VideoToolbox'
   s.libraries = 'c', 'sqlite3', 'stdc++'
   s.vendored_libraries = "lib/libWebRTC-#{s.version}-1-arm-intel-Release.a"
