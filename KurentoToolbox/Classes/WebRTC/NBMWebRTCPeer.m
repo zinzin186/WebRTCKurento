@@ -411,18 +411,20 @@ didReceiveMessageWithBuffer:(RTCDataBuffer *)buffer {
     }
     
     //Video setup
-    BOOL videoEnabled = NO;
+//    BOOL videoEnabled = NO;
     // The iOS simulator doesn't provide any sort of camera capture
     // support or emulation (http://goo.gl/rHAnC1) so don't bother
     // trying to open a local video track.
-#if !TARGET_IPHONE_SIMULATOR
-    AVAuthorizationStatus videoAuthStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    if (videoAuthStatus == AVAuthorizationStatusAuthorized || videoAuthStatus == AVAuthorizationStatusNotDetermined) {
-        videoEnabled = YES;
-        [self setupLocalVideo];
-    }
-    
-#endif
+//#if !TARGET_IPHONE_SIMULATOR
+//    AVAuthorizationStatus videoAuthStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+//    if (videoAuthStatus == AVAuthorizationStatusAuthorized || videoAuthStatus == AVAuthorizationStatusNotDetermined) {
+//        videoEnabled = YES;
+//        [self setupLocalVideo];
+//    }
+//
+//#endif
+    BOOL videoEnabled = YES;
+    [self setupLocalVideo];
     
     return audioEnabled && videoEnabled;
 }
@@ -438,11 +440,12 @@ didReceiveMessageWithBuffer:(RTCDataBuffer *)buffer {
     // The iOS simulator doesn't provide any sort of camera capture
     // support or emulation (http://goo.gl/rHAnC1) so don't bother
     // trying to open a local video track.
-#if !TARGET_IPHONE_SIMULATOR
-    //Video setup
     [self setupLocalVideo];
-    
-#endif
+//#if !TARGET_IPHONE_SIMULATOR
+//    //Video setup
+//    [self setupLocalVideo];
+//
+//#endif
 }
 
 - (void)setupLocalAudio {
@@ -472,17 +475,17 @@ didReceiveMessageWithBuffer:(RTCDataBuffer *)buffer {
     RTCVideoSource * source = [self.peerConnectionFactory videoSource];
     
     #if !TARGET_IPHONE_SIMULATOR
-      RTCCameraVideoCapturer *capturer = [[RTCCameraVideoCapturer alloc] initWithDelegate:source];
-     // [_delegate appClient:self didCreateLocalCapturer:capturer];
-    #else
-    #if defined(__IPHONE_11_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_11_0)
-      if (@available(iOS 10, *)) {
-        RTCFileVideoCapturer *fileCapturer = [[RTCFileVideoCapturer alloc] initWithDelegate:source];
-        [_delegate appClient:self didCreateLocalFileCapturer:fileCapturer];
-      }
-    #endif
-    #endif
-    [_delegate webRTCPeer:self didCreateLocalCapturer:capturer];
+          RTCCameraVideoCapturer *capturer = [[RTCCameraVideoCapturer alloc] initWithDelegate:source];
+          [_delegate webRTCPeer:self didCreateLocalCapturer:capturer];
+        #else
+        #if defined(__IPHONE_11_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_11_0)
+          if (@available(iOS 10, *)) {
+            RTCFileVideoCapturer *fileCapturer = [[RTCFileVideoCapturer alloc] initWithDelegate:source];
+    //        [_delegate appClient:self didCreateLocalFileCapturer:fileCapturer];
+              [_delegate webRTCPeer:self didCreateLocalFileCapturer:fileCapturer];
+          }
+        #endif
+        #endif
     return [_peerConnectionFactory videoTrackWithSource:source trackId:kARDVideoTrackId];
 }
 

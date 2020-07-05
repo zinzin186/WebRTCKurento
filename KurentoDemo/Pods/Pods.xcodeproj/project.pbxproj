@@ -1,0 +1,2588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013A9BD510F309BBC96309133A0E5176 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA27BCC651ED297A739BF6E8961C3FE5 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01B4591DAF908994F6E0A3D3060699E0 /* Pods-KurentoDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A48615CDDE42E1FC1207BF9127432FB2 /* Pods-KurentoDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02ED285694F78459FC3921EF7BCC263B /* Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEC963B78C40986D0C61B3F5956A28F /* Tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04EB6AD0C17DD668F18219237DB53D8D /* NBMRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 35388C83AE1134C2E0F4E800AD061353 /* NBMRequest+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		082D889596192F4536215A52FF412496 /* NBMSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 465AF159E6F8588C5A9A21154D6FECB2 /* NBMSettingsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715464FD0713FB07DFADC65764A7D4D /* Engine.swift */; };
+		0C5855A309B6945E52FFE1F785FE7583 /* NBMMediaConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D29F3729472C02EEEDCBABA8DB1955 /* NBMMediaConfiguration.m */; };
+		0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61A6913DA65F3FD84A4DFAEE165D82 /* WebSocket.swift */; };
+		0E2E2896ADA3C8D82AA48FA7F67717BB /* SBJson4StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 88257897A31DAB2EE2CE326541926947 /* SBJson4StreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11B8EF45C2DDD14ACAE25CBD22C147EB /* NBMRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = F72EC0A9520CD2722A92B0EED6D84D75 /* NBMRoom.m */; };
+		11C3AF7EE7364C40F9B0CA64D773312D /* NBMSettingsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD24529BF403DA7630D8982903A72A61 /* NBMSettingsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12994CB50F4973CAD00D1FF41AA1A1DB /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 633AD60F8404AE9BB83BE6D9890DC005 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1572414BB57E1CAEB0839E30A33979C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		18F7EC5CE65997FBF1A31E0E21E49F8F /* NBMPeerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8265666FD9C27B90A120268FDA3CA514 /* NBMPeerConnection.m */; };
+		190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE311AC612D4F83093878B59F84EBDE /* FoundationHTTPServerHandler.swift */; };
+		195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB1FC978C09135E3292942981EB553 /* Server.swift */; };
+		19E11B02DE27F131DF3264B06DAC6313 /* NBMTreeClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9855522E498148BAE9B69965EEAD55D /* NBMTreeClientDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582E153A55FA933C23F1EF826C01F37 /* FoundationTransport.swift */; };
+		1ABE34D8C74B51BD91E367AD424C9302 /* SBJson4StreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = EC39357D28B4D6715F2130AF63F6DD33 /* SBJson4StreamParserState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B70A707741A519DCF36065E20123460 /* Room.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F0DB8CB0D3843A8CE3667B267EEE06 /* Room.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAEFD8387062865110D29AA7195C801 /* StringHTTPHandler.swift */; };
+		1D6F3179E5B887B8A1549635129CB6E1 /* NBMEAGLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 268E53C692E3B6B30EB76EB85DBC255D /* NBMEAGLRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EAD1E78E319491E7E558FF51F88A0D9 /* KurentoToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ED3A3D4F47F5174F6334851C618B22 /* KurentoToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207A085CAE30B961865712FEEC013C55 /* NBMJSONRPCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6308CABA8228106A03A61E9F62B397 /* NBMJSONRPCUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20CF5F4EAA9154C66294F6DF01AD3BAE /* NBMTreeEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D34E0FE0F311FFC1E8101A0B18863F23 /* NBMTreeEndpoint.m */; };
+		24E68AACD3AF06B0CB93FFEB52A8CE4D /* NBMTreeClientError.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2B24FC7D90C183E5C7D6F3480907 /* NBMTreeClientError.m */; };
+		2858BF09CE1E70655D0CEAD98B1CF37E /* Pods-KurentoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CB9F048DD04697AF686464EC92DE21 /* Pods-KurentoDemo-dummy.m */; };
+		28F5579EF1F978871D0F10268100CE0A /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C81F9C585528268F14669DA8947CB42 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD62D006D0B7F72F7AC1E546D7DA3EB /* SBJson4StreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D025C8E9CC0106E51D780CE439C22EB /* SBJson4StreamWriterState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C94C4B451C110BF68B89BFAD5DF6D39 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A309987D9C2BA204D417314C882FD934 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB7A04AE2EAD02F14B362A2F1517620 /* NBMSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B46EDD93C0A90789780ACF418FC3AB /* NBMSettingsModel.m */; };
+		2D328E9B243BAD9916EF88AD3005DCD9 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87287A9015F44782C5D3D35450554C3E /* SBJson.framework */; };
+		2DAB73EC1E3862C4D031A136B9C2B145 /* NBMWebRTCPeer.h in Headers */ = {isa = PBXBuildFile; fileRef = 607FDB2A39731A308882184A85EE5C60 /* NBMWebRTCPeer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DCC548F7328155210C9F1AE93DC1604 /* NBMSettingsModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B22A57B1828C6788961C173BC1B6A8 /* NBMSettingsModel+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E6D97681A8E42BB57E80CE8947B19F9 /* NBMPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9662ED6E37F9F5E0A5F9C2051DEFD /* NBMPeer.m */; };
+		2EA884EA69210EAEF22C1358F7C0F2ED /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BB46FD9CB87878C7A6DCE93EADECD3 /* CocoaLumberjack.framework */; };
+		30819DBFF40429C3CF8736353561851A /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899C4C627C1E92E4C32ACFAFC5D27CB /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3271F9C1B4ADCF1CD6BFBF2E0B3133DA /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1644095EF62CBFAEE7DCD116DFAD34 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		328A1949567472667CFB352B156ACCE6 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7F57947FE079912A6438CACA2057A8 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333C860D608F8B01945F3E59B45B7FB6 /* SBJson4StreamTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1C4BBA5F2C0120B41BE06CF941D84B /* SBJson4StreamTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336DDE08AD148B9C17D78EB37224E110 /* NBMRoomClientError.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ACD98E9297E856331472C147A298D7 /* NBMRoomClientError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E6FE312479DFB5A4FBA11A67419647 /* TCPTransport.swift */; };
+		36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68F62B026731DD92440BD967AB34CF /* FrameCollector.swift */; };
+		37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B7D9FE49B137286B49A7C81C32B627 /* Data+Extensions.swift */; };
+		39C32D3C798E66F822959D543DB42D23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		3DBD9F3B559384B25131A53CC2727A28 /* NBMRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1CDEF0DEBC8ED94E700BBB837F974 /* NBMRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F19993965A0EAC6735BB2EAA844B61B /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C2E6C569666F24F4C42FFE28785430 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4028795E7516E8F9AD519CD7BD4140A4 /* SBJson-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F673B53F429FD7BE1DE4AA931CA6FB7D /* SBJson-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		425BCECFB56F032EB795319812E72C52 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 801F3151DB47D5825003841509AFA450 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E052A69A09FCF127F4FA5D71827FB29C /* Framer.swift */; };
+		45DEB781E82D129F401E0B8392686C6F /* NBMMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CEC161E9A93C99ECB6204E990A6F0 /* NBMMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		460D3060E87BB77AB190F495737F9183 /* Pods-KurentoDemo-KurentoDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 971AF5FE7D615C6DCFA3676707D1728A /* Pods-KurentoDemo-KurentoDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		475CFA330F133D2C699FF267DB96D5DE /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E3625CDD970B50F66586A64742870F46 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE29222967C89392242846B1CD93BAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF1AD5BC81EA8032B4E09E76C1D94F /* WSEngine.swift */; };
+		4D79F8C8739761C3755BDCD0C039D8C2 /* NBMJSONRPCConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 288C056F023334DBD3BF03B21B9C0360 /* NBMJSONRPCConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FB7E3BF0CAF7FE698B0D07A8020A669 /* SBJson4StreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F1062C2B5EA7279ACA74425579766B76 /* SBJson4StreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52F8668E57CB5D0D3667E3DEC20F8D15 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FBF6B8B628636640EC2554F23E8732 /* SocketRocket.framework */; };
+		5306B0DEF4CAEBF266E6FDBE590AF5BE /* NBMTreeClientError.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2A1F4A63FBC512E53AC3B11C58DAD1 /* NBMTreeClientError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		546C48A95BB343D7B677AA6F055AA61A /* SBJson4StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D10FA455508A23EE8D7920C1F9035C /* SBJson4StreamParserState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		55A22CACFE15E557B02FAA9D552F2532 /* SBJson4.h in Headers */ = {isa = PBXBuildFile; fileRef = FF085C129373F7F09C40A15AE779C4E3 /* SBJson4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5689EBC7D1469D292FAC7F7823EC23D5 /* NBMTreeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6A429299F248469D31A90D7EAEEBE7 /* NBMTreeClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A464EDC3E472E3852B4B41931453D1 /* Pods-KurentoDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E75852913E5013B800496F2DF509D /* Pods-KurentoDemoTests-dummy.m */; };
+		5D6D0709D800FA56A20951D2FB669CFA /* NBMEAGLVideoViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 468FDD62270F6740216E73E8053D83FF /* NBMEAGLVideoViewContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F3F9E714D77F6E1166D81BF09FDA97C /* NBMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D5AA541E81854C4229BB4CB6229769 /* NBMLog.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		62971117DF907BDCD8C6BE4930869EA6 /* NBMJSONRPCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C932FE5FEB3DAE4FF4362B6B13255F2 /* NBMJSONRPCConstants.m */; };
+		662463CD2B03483AE730DFDB57963FAB /* NBMRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 007EDB8ACE10770ECEB510D3E8B85A5E /* NBMRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		698B368727F30370C06D024BF2F9DE97 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFD8E1E4BE8B34D8C98ECBFD1497EB /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A65F2D70D3A2E422D894104870E9AE2 /* NBMWebRTCPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3831B609C408FD6EB6FA4B5FF3904E2 /* NBMWebRTCPeer.m */; };
+		6CC70FACFA971E0DA9655DA2FF7E6011 /* SBJson4StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E35599B1787D3B53D57D445D186B93 /* SBJson4StreamWriter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2B2FA42ACD92ADC5E5C95668BF04E /* Starscream-dummy.m */; };
+		717AB8BA91295971D775063206C07849 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 198E99B6EBA3841FE6F808385C69BA97 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		72C78C0F1639ACCF5C3F4B1C993B3246 /* NBMCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1FD7D6A235E0EE5DD0B322ABCA8CD9 /* NBMCaptureController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72DB3A0F69CEC67CB6E9E8BBF0619BA5 /* NBMTransportChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01974202433DA8CD8707D09870EA6FCF /* NBMTransportChannel.m */; };
+		73478CD7BDEEBFE91BCBCBB559C827E0 /* NBMJSONRPCClientError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A70DA2F362F7E1F365AF19E6902F35F /* NBMJSONRPCClientError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		770533A59739432A1B6983E2AF7BC0E6 /* NBMJSONRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5527C0F52247E57AFA61DCAC4D2F81 /* NBMJSONRPCClient.m */; };
+		77245F842F28A2D1753A829BAC47A7AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACC43AD2CB3D3A6A050C3C996E93D35 /* Security.framework */; };
+		793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A27DA59D99CBCB9E26D749BD5AF415 /* WSCompression.swift */; };
+		7B754FF24E4BEC9E0383E1A4FB1CC522 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03D23620A6681D49EB3488CC154E25 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7B8923D0362DE030C667C99A092C4788 /* NBMCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBB553032D3C1620CD81AC37F3F4E7 /* NBMCaptureController.m */; };
+		7C45A08A0F46ED0B9DF9630088A219EF /* NBMResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 735369711520F73803855EE3287EEA21 /* NBMResponse+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D72164BC35A3B2E3CEF84D935361568 /* NBMJSONRPCClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A816623F170D25C6C10C6C71DDB779 /* NBMJSONRPCClientDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB7DCE6D72B0F52A3CAFF7796D43613 /* NBMJSONRPCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 921B3CF03E31C12CABC19E6DAB72BA61 /* NBMJSONRPCClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EE8D81E868D4272B3DD1E2A34BFACE6 /* SBJson-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3376E3E7362267B875ABED3F23A69CAB /* SBJson-dummy.m */; };
+		7F819735F3867A648B66CC8F83C47D13 /* NBMTransportChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B7D15E74F70C2754F5ADCBEDA624C7 /* NBMTransportChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		806AA115F6369CB70D9AFA58859DDF4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		808BEF69BF609D50156963749B54B0BD /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF79EDF6125AD4DCFEB7786705FA1D3 /* SocketRocket-dummy.m */; };
+		81D1BBE3F67E725C566281BA045C5805 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AD86A345423422D34500DB6249E6F9 /* CFNetwork.framework */; };
+		86041DB98E87F0B6F8161E28CF47D400 /* Pods-KurentoDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1659E1783AB84DF47D3E2CA40B81297D /* Pods-KurentoDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA467A518CF75CD68BBA4661B4C762AC /* HTTPHandler.swift */; };
+		8F8F8070EDB19BBD15531130636F8176 /* SBJson4Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B10905C8F2CB362CC5954022B22506 /* SBJson4Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9446C3740D7C9E09CE8747D2D104D193 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C20A3BE534353B5F772B5C10503D42 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94565FDA9D76DBEC9F34D3E8FA8763CF /* NBMTreeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C921E166959512A834116760DEC21B5 /* NBMTreeClient.m */; };
+		946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8CBE6B236D17021E880AA6A110EB3 /* FoundationSecurity.swift */; };
+		96FBD40424B1BE5B002708DC /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FBD40324B1BE5B002708DC /* WebRTC.framework */; };
+		981838A16A6C65B5D2A393CDCFC36CD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		98A8FC8D636FAE85C723197D40380F85 /* NBMResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA62C22289FC1741D53868E1D4D3BAB /* NBMResponse.m */; };
+		98BF03A3D2F976B58B532AD298A71AEC /* SBJson4StreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC4E8F5C3C252440EDAE814E4C56D0C /* SBJson4StreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB1E71195D9FAA6B7362B5194E9A9F7 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BF2466E37F6DF72F2533DE12C42CAF3 /* NBMEAGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8ECCCE80AE35A065E0C4DA7325099 /* NBMEAGLRenderer.m */; };
+		9C8586540C75444981C06C54965DE08A /* NBMPeer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0CF853C5B8199AF7D8353DE68E1321A /* NBMPeer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A156A0B267886EC33B290FD66624C5AE /* NBMTreeEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA3A351330A4A089AE3E2F776669330 /* NBMTreeEndpoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58006FE5E5F9C1FBDA33C3CE8F01BC4 /* NBMError.m in Sources */ = {isa = PBXBuildFile; fileRef = A45C220D4927274B5B30B51721D86DF5 /* NBMError.m */; };
+		A726F8AF0AC64B15163BEBA061D2841A /* NBMJSONRPCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 731D562E4EC2B9EA5A75F1031E07056F /* NBMJSONRPCError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9352FD11B728F2EED67C57140513C1A /* NBMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 338AF497B65F9B1A8ED154EC99F6862B /* NBMRequest.m */; };
+		A95BC3B4A1E78C642125D806B393A1AE /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5ED8CBAF5FEDFCA701FF3EE63BBBBC /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC02CE77BF71C513E13BCC08944D5E5E /* NBMJSONRPCClientError.m in Sources */ = {isa = PBXBuildFile; fileRef = B936D55BBBC19C8C8A26ADF700C9089B /* NBMJSONRPCClientError.m */; };
+		AC653A360D3B2932E9CE017BF5A91A2A /* RTCMediaStream+Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 861B117448C4AB9365896793CCF4EF81 /* RTCMediaStream+Configuration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD3407EF4859AE2089458FDA2850D04B /* NBMRoomClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525F3A2873B367ABE29C03DD067959A /* NBMRoomClient.m */; };
+		AF137CC48058588202074B6BD592836F /* NBMSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A2217ABAEECB8D85ADDBBBD64B82DD /* NBMSettingsStore.m */; };
+		AF2A8D5E232C111D732706D4452C5ABA /* NBMJSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FE4912EA87721296D780322339444F /* NBMJSONRPCError.m */; };
+		B455E875A8388E093C422AE5B3E8AFD6 /* SBJson4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B11E108436F427BFCA4B7FC14A4824B /* SBJson4Writer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B71F6186BF4E49AAE25E75FB0C7BCB8B /* KurentoToolbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5E019A0B59EF16A6940AA80F56435 /* KurentoToolbox-dummy.m */; };
+		B7D54C5E5A082ACF7ACB85AD57B099E3 /* NBMRoomClientError.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BFEFAFEBF23214C9E64DA865ACB060 /* NBMRoomClientError.m */; };
+		BA79DE6518F1C30B2BBDF316DEF8CB1A /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F2A4F350B129C40A0065906D3CF455 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBD6C03D09ADBE47B692F4D14EEDAC78 /* WebRTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 31502C0830608B8F2E90E4B105B89F4F /* WebRTC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF5D785F3D08A82DE6568F5B95A1179 /* NBMPeerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 076EB9F64E794A27F41B073EC2F66859 /* NBMPeerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFAE110A98AA9853BDF237257A2FD5E0 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 04364D1FF5845EC3C69E8E5611E4B6B8 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B73776544AB6854E96A46D624259879 /* Compression.swift */; };
+		C23A21839F21390A284773C17C20255A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 46665EDA5237AC80B589C40F98ED3B31 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C26E44FE5011D52554234289E1F2887B /* JSON-RPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7428F25EBEEDA8049E16915657657897 /* JSON-RPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBED9B940134A444287C03DC2C4D10 /* Transport.swift */; };
+		C2FB477A10D9AA6935440E7E7AEF11C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		C59E7EF8609E2075EF4B55CEBCDE4DF7 /* NBMSessionDescriptionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = CB38F43954D75C1A3A7268C2994CA7AC /* NBMSessionDescriptionFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C04FE8EAE0B1A80841DD5868609DA5 /* WebSocketServer.swift */; };
+		C89C1A57F7624E1647F1D589D2685D9F /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A029CBCDB69E2CBD2273735ADE11BA5B /* DDLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB9CBC123421E52771CAFE708BD64E60 /* NBMResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F005CA68BC26C8E52A3FFA9C931A0895 /* NBMResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F260FED78469A149506F9FC011A118 /* NativeEngine.swift */; };
+		CD39B281DE0971EBD689875678BF644B /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CD6DC493EFD87A0E13486CF41D1051 /* CocoaLumberjack-dummy.m */; };
+		CDA79009381BDDCB18F77ACE5E3C0774 /* NBMTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9231A8038F7118F0829EC5BD21FD0FF5 /* NBMTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1360511BE4B50893546C8D4EBC2D17E /* NBMJSONRPCUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 773E17E88A753E611A5CB40C4507671C /* NBMJSONRPCUtilities.m */; };
+		D403C1F81490EBDE439F95C048DD1EDD /* SBJson4StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F6B2973B98E1B84D88E1FE3D68AA28 /* SBJson4StreamTokeniser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D50DB5CBE57732674B4B838E58D8D0BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		D529F27C779DF39D6B65171EC9B1807B /* NBMRoomConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1909E03092476BD8C9B896C9E2F01245 /* NBMRoomConstants.m */; };
+		D622318B091127845350339DE060CBE6 /* NBMRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 8106EFE9A0A92C88305048CF7924AC5F /* NBMRoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7AB5F5F34FBF62FAA1B18D47FE13919 /* SBJson4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D8DE91D923BE3941418D2AD62043B /* SBJson4Parser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA0F9B00330E8D715030A74A36E1C846 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FD599E96CEEF3B09B632D75EFF0840D8 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EBB3EBD1ABDFC3AF50A07D488C1F1F /* FoundationHTTPHandler.swift */; };
+		DADD879FAF035292510EF26768DA3BD2 /* NBMTimeoutable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECABC36910525029CEC310D57AEE427 /* NBMTimeoutable.m */; };
+		DD329B3EDA6FF6B4AB69726ADF8984DE /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B9197D804E6EC40B507B792F926D2F86 /* SRWebSocket.m */; };
+		DE8A48B72454336EC234111393FFE553 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CFD5DE295BC13E503F2FFA6FCCB887 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DED72258978C28E53946A26BE89AFA06 /* NBMRoomClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C344DC1716D11FBE8A69B573D3C1F874 /* NBMRoomClientDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEFF2336BB8B94E92CD455AD468E8D29 /* NBMEAGLVideoViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C83B2AE3A649C0C099620589EAEFDCD9 /* NBMEAGLVideoViewContainer.m */; };
+		DF607ED61CB35926DA71528EF5B82E4D /* NBMRoomError.h in Headers */ = {isa = PBXBuildFile; fileRef = 128E7A2CEA01985D141F4DDD616B0797 /* NBMRoomError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E23500BB8F5F65AF1ED575724E708F10 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AA33821CAD8BF9981001062EA96727 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E4EC349D7C2903D1EF7EF304126BEA30 /* SBJson4StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B671DB599808767D2488F7CE56494983 /* SBJson4StreamWriterState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E68B2D0ABDA7510F2E61CC5EAD6B8D2B /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3EDAFC4B5F5F38A2D1D5BA3ABA4CAF /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB75A4D5D187B99A33892D77839871A /* NBMTimeoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8007D7D5863B58891FDD1ACC10718C /* NBMTimeoutable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE289A3E6AB97035706581E0AE8FE198 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 7953BA8968AC1F4B32C6E365B7DCE575 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEB2153610522E92606D1C0D6E2F519E /* NBMRoomClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D42CD66FDF79E4A952C42495937AFE79 /* NBMRoomClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEDA707F68202367793C29A63C256B91 /* KurentoToolbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6985275BE1EDFD1097E9D92C8FF3E99 /* KurentoToolbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFB3B637B041319B2E0263C3C0345588 /* NBMSessionDescriptionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F8688C2CCA21DFA3DB29EA7945E5B /* NBMSessionDescriptionFactory.m */; };
+		F118C3C2218AD556EAA60EFE9C0830AF /* NBMMediaConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E8AA84FCCEBFFCDDB483CFD4F6FA5D /* NBMMediaConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F21AC9F18329646A0F67B7AC106D58E0 /* NBMRoomConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8FD83998AA968195C9FAFADE831C67 /* NBMRoomConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2667C3C4D4DAF1F138835F513015D57 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBF7C2ABB7A8037653AE3C6CC53013C /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3A8BD27F55ACD28F8EB65063AF7057D /* Pods-KurentoDemo-KurentoDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA78030C47CDD85FB9B699379FD61F1 /* Pods-KurentoDemo-KurentoDemoUITests-dummy.m */; };
+		F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11748A52569D6972A30D1C80649C30EF /* Security.swift */; };
+		F52071431E76622716A575BE5BD6376A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */; };
+		F8B3CB64EF5470F591BE0302817D6C7E /* NBMRoomError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F1FF506F7C6F3D441671E3DF2265A /* NBMRoomError.m */; };
+		FA049C72ECA9987C0D989218F42A9355 /* SBJson4Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 590202F4E9D00B6CF54D06F94A834F2F /* SBJson4Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3EA6C296DA17B00D9A76107BFCA960 /* RTCMediaStream+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = A4685B0B9A2CF6281E23ECBEB6FE20AB /* RTCMediaStream+Configuration.m */; };
+		FBF94F5ECAC9A1CCED25B201CF7EC856 /* NBMError.h in Headers */ = {isa = PBXBuildFile; fileRef = 187C507DC6039C270CB21BFBCFCAD1D4 /* NBMError.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F049ECC84366D84298849FC8691336F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		41C49E4D6D0026E4D2AE2EA90F174372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		4583C21A11B1107EEDB902CB35F51EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		510265017DF0F355A11500EB499FD94F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		7730EF1DC9076F88748373842A4A1579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		7BD9C98291B7056A31DDF2F92C3B2CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A737B746331762ACD053E5EF1415F7;
+			remoteInfo = SBJson;
+		};
+		910F59AC4B473C0E5E34762FECAD1005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		99BEC621E2CCD83A0AE9F8FEED54F8F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A737B746331762ACD053E5EF1415F7;
+			remoteInfo = SBJson;
+		};
+		BDB2C63E3076525DDAC946DD6E384EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A737B746331762ACD053E5EF1415F7;
+			remoteInfo = SBJson;
+		};
+		C52B3F4AC493158BF0D87FBA09124F0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDCFFCAF28563213A5C17E07D76361FA;
+			remoteInfo = KurentoToolbox;
+		};
+		DD7147E85FE3D8715765F22379FCA5CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		E09C072E82A8436DFE53998A1C069EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBAFCF5B0AD64BA0720649E90652F84A;
+			remoteInfo = "Pods-KurentoDemo";
+		};
+		F29F1437946197862B80DA9AE75333F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		FDAE7B002A8EA798DF33FE380634E89A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDCFFCAF28563213A5C17E07D76361FA;
+			remoteInfo = KurentoToolbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007EDB8ACE10770ECEB510D3E8B85A5E /* NBMRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRequest.h; path = "Classes/JSON-RPC/NBMRequest.h"; sourceTree = "<group>"; };
+		00EBB3EBD1ABDFC3AF50A07D488C1F1F /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		01974202433DA8CD8707D09870EA6FCF /* NBMTransportChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMTransportChannel.m; sourceTree = "<group>"; };
+		0276C39601C637F1A0C60D7BB536DE3D /* Pods-KurentoDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemo-Info.plist"; sourceTree = "<group>"; };
+		04364D1FF5845EC3C69E8E5611E4B6B8 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		076EB9F64E794A27F41B073EC2F66859 /* NBMPeerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMPeerConnection.h; path = Classes/WebRTC/NBMPeerConnection.h; sourceTree = "<group>"; };
+		09E6FE312479DFB5A4FBA11A67419647 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
+		0CFBB553032D3C1620CD81AC37F3F4E7 /* NBMCaptureController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMCaptureController.m; path = Classes/WebRTC/NBMCaptureController.m; sourceTree = "<group>"; };
+		0D5527C0F52247E57AFA61DCAC4D2F81 /* NBMJSONRPCClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMJSONRPCClient.m; path = "Classes/JSON-RPC/NBMJSONRPCClient.m"; sourceTree = "<group>"; };
+		0EADFCD8809DE887149FAAC4260C2B52 /* NBMResponseErrorCode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMResponseErrorCode.html; path = docs/html/Constants/NBMResponseErrorCode.html; sourceTree = "<group>"; };
+		0F962A5CA87308A52143B1B5F199C35C /* Pods-KurentoDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KurentoDemo-frameworks.sh"; sourceTree = "<group>"; };
+		0FD5E019A0B59EF16A6940AA80F56435 /* KurentoToolbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KurentoToolbox-dummy.m"; sourceTree = "<group>"; };
+		11748A52569D6972A30D1C80649C30EF /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		1180E4B2C071B13FB3240D7072C409EB /* NBMVideoCodec.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMVideoCodec.html; path = docs/html/Constants/NBMVideoCodec.html; sourceTree = "<group>"; };
+		128E7A2CEA01985D141F4DDD616B0797 /* NBMRoomError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomError.h; path = Classes/Room/NBMRoomError.h; sourceTree = "<group>"; };
+		12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		13FB1FC978C09135E3292942981EB553 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
+		14BFEFAFEBF23214C9E64DA865ACB060 /* NBMRoomClientError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMRoomClientError.m; sourceTree = "<group>"; };
+		1525F3A2873B367ABE29C03DD067959A /* NBMRoomClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRoomClient.m; path = Classes/Room/NBMRoomClient.m; sourceTree = "<group>"; };
+		1659E1783AB84DF47D3E2CA40B81297D /* Pods-KurentoDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KurentoDemo-umbrella.h"; sourceTree = "<group>"; };
+		16D10FA455508A23EE8D7920C1F9035C /* SBJson4StreamParserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParserState.m; path = Classes/SBJson4StreamParserState.m; sourceTree = "<group>"; };
+		18183837E96E486BE3211744C0BB375D /* SocketRocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.debug.xcconfig; sourceTree = "<group>"; };
+		187C507DC6039C270CB21BFBCFCAD1D4 /* NBMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMError.h; path = Classes/Utils/NBMError.h; sourceTree = "<group>"; };
+		1909E03092476BD8C9B896C9E2F01245 /* NBMRoomConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRoomConstants.m; path = Classes/Room/NBMRoomConstants.m; sourceTree = "<group>"; };
+		198E99B6EBA3841FE6F808385C69BA97 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		19CFD66A125501182568E82220983B72 /* NBMWebRTCPeerDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMWebRTCPeerDelegate.html; path = docs/html/Protocols/NBMWebRTCPeerDelegate.html; sourceTree = "<group>"; };
+		19F0DB8CB0D3843A8CE3667B267EEE06 /* Room.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Room.h; path = Classes/Room/Room.h; sourceTree = "<group>"; };
+		1A9454B511313015D4D65C51F5742CDE /* NBMJSONRPCClientConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMJSONRPCClientConfiguration.html; path = docs/html/Classes/NBMJSONRPCClientConfiguration.html; sourceTree = "<group>"; };
+		1AF0A5189D71C6CE06D9F03734A77F0E /* _index.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _index.scss; path = docs/html/css/scss/_index.scss; sourceTree = "<group>"; };
+		1CE311AC612D4F83093878B59F84EBDE /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		1EEB9970728F779B9D21273AD70E5642 /* _print.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _print.scss; path = docs/html/css/scss/_print.scss; sourceTree = "<group>"; };
+		1FF79EDF6125AD4DCFEB7786705FA1D3 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		20B10905C8F2CB362CC5954022B22506 /* SBJson4Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4Parser.h; path = Classes/SBJson4Parser.h; sourceTree = "<group>"; };
+		21E2B58687F857C05E5427371C65E23A /* NBMRequest.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRequest.html; path = docs/html/Classes/NBMRequest.html; sourceTree = "<group>"; };
+		22E8AA84FCCEBFFCDDB483CFD4F6FA5D /* NBMMediaConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMMediaConfiguration.h; path = Classes/WebRTC/NBMMediaConfiguration.h; sourceTree = "<group>"; };
+		268E53C692E3B6B30EB76EB85DBC255D /* NBMEAGLRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMEAGLRenderer.h; path = Classes/WebRTC/NBMEAGLRenderer.h; sourceTree = "<group>"; };
+		288C056F023334DBD3BF03B21B9C0360 /* NBMJSONRPCConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMJSONRPCConstants.h; path = "Classes/JSON-RPC/NBMJSONRPCConstants.h"; sourceTree = "<group>"; };
+		2B19E9D7FCD1A1DDCCD162634BB6C337 /* NBMPixelFormat.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMPixelFormat.html; path = docs/html/Constants/NBMPixelFormat.html; sourceTree = "<group>"; };
+		2D8FD83998AA968195C9FAFADE831C67 /* NBMRoomConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomConstants.h; path = Classes/Room/NBMRoomConstants.h; sourceTree = "<group>"; };
+		2DAEFD8387062865110D29AA7195C801 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		2DC4E8F5C3C252440EDAE814E4C56D0C /* SBJson4StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriter.h; path = Classes/SBJson4StreamWriter.h; sourceTree = "<group>"; };
+		2E0251F87105CFF7F13B18EA7E107D2B /* Pods-KurentoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2EE9662ED6E37F9F5E0A5F9C2051DEFD /* NBMPeer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMPeer.m; path = Classes/Room/NBMPeer.m; sourceTree = "<group>"; };
+		3065BACF06A65F3F722DAE999C5A2084 /* NBMRenderer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRenderer.html; path = docs/html/Protocols/NBMRenderer.html; sourceTree = "<group>"; };
+		30E6B3A145DE9BFC6EA664FD4C2EACCB /* NBMRoomError.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomError.html; path = docs/html/Classes/NBMRoomError.html; sourceTree = "<group>"; };
+		310E7CEBC63BE45287B1024E67ED4C41 /* Pods-KurentoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		31502C0830608B8F2E90E4B105B89F4F /* WebRTC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebRTC.h; path = Classes/WebRTC/WebRTC.h; sourceTree = "<group>"; };
+		31C04FE8EAE0B1A80841DD5868609DA5 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		3211D5551606B2E0770E223970CF026E /* style.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = style.scss; path = docs/html/css/scss/style.scss; sourceTree = "<group>"; };
+		3376E3E7362267B875ABED3F23A69CAB /* SBJson-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBJson-dummy.m"; sourceTree = "<group>"; };
+		338AF497B65F9B1A8ED154EC99F6862B /* NBMRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRequest.m; path = "Classes/JSON-RPC/NBMRequest.m"; sourceTree = "<group>"; };
+		35388C83AE1134C2E0F4E800AD061353 /* NBMRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMRequest+Private.h"; sourceTree = "<group>"; };
+		35EBED9B940134A444287C03DC2C4D10 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		37F8394376BE95E88738A926212E154C /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		37FBF6B8B628636640EC2554F23E8732 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3863A6AD809C1CFD2FA02FAA3106F0CE /* overview.rst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = overview.rst; path = docs/overview.rst; sourceTree = "<group>"; };
+		38BA6245B7DCC70C5403FEFB993AC807 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		39A2217ABAEECB8D85ADDBBBD64B82DD /* NBMSettingsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMSettingsStore.m; path = Classes/WebRTC/NBMSettingsStore.m; sourceTree = "<group>"; };
+		3ABA3B4A27374B8B30A4D798410E4C16 /* NBMJSONRPCConnectionState.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMJSONRPCConnectionState.html; path = docs/html/Constants/NBMJSONRPCConnectionState.html; sourceTree = "<group>"; };
+		3ACC43AD2CB3D3A6A050C3C996E93D35 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3CDCD0F3D1CF7AF1E75108A518B68D88 /* NBMJSONRPCClient.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMJSONRPCClient.html; path = docs/html/Classes/NBMJSONRPCClient.html; sourceTree = "<group>"; };
+		3E299E33BB94ECA6431826466E93371E /* Pods-KurentoDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KurentoDemo.modulemap"; sourceTree = "<group>"; };
+		3F5529214AC28F4F84A4CF882B1927D8 /* KurentoToolbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KurentoToolbox-prefix.pch"; sourceTree = "<group>"; };
+		3F5739714F43B0D74E2E1D3EE6E169F7 /* _object.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _object.scss; path = docs/html/css/scss/_object.scss; sourceTree = "<group>"; };
+		427BDCEA88F13DAE6AE5C3B5FC9CE0E9 /* _xcode.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _xcode.scss; path = docs/html/css/scss/_xcode.scss; sourceTree = "<group>"; };
+		42ACD98E9297E856331472C147A298D7 /* NBMRoomClientError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMRoomClientError.h; sourceTree = "<group>"; };
+		465AF159E6F8588C5A9A21154D6FECB2 /* NBMSettingsStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMSettingsStore.h; path = Classes/WebRTC/NBMSettingsStore.h; sourceTree = "<group>"; };
+		46665EDA5237AC80B589C40F98ED3B31 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		468FDD62270F6740216E73E8053D83FF /* NBMEAGLVideoViewContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMEAGLVideoViewContainer.h; path = Classes/WebRTC/NBMEAGLVideoViewContainer.h; sourceTree = "<group>"; };
+		46B7D9FE49B137286B49A7C81C32B627 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		47403A120F8694AA9E6A502A27F68683 /* NBMRendererDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRendererDelegate.html; path = docs/html/Protocols/NBMRendererDelegate.html; sourceTree = "<group>"; };
+		4AD8CBE6B236D17021E880AA6A110EB3 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		4BF86E9C0FF6C8A667452DC581D22617 /* Pods-KurentoDemo-KurentoDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemo-KurentoDemoUITests-Info.plist"; sourceTree = "<group>"; };
+		4C03D23620A6681D49EB3488CC154E25 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		4CEC963B78C40986D0C61B3F5956A28F /* Tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Classes/Tree/Tree.h; sourceTree = "<group>"; };
+		4ECABC36910525029CEC310D57AEE427 /* NBMTimeoutable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMTimeoutable.m; sourceTree = "<group>"; };
+		506332A4E4959D9B5B64014B3EB012AE /* button_bar_background.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = button_bar_background.png; path = docs/html/img/button_bar_background.png; sourceTree = "<group>"; };
+		50C20A3BE534353B5F772B5C10503D42 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		55EAC7E430CF4B7B3D21478C56861ADC /* Pods_KurentoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KurentoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57116D497C8AC6A4DC787ADC13733C25 /* NBMAudioCodec.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMAudioCodec.html; path = docs/html/Constants/NBMAudioCodec.html; sourceTree = "<group>"; };
+		57955E23708D8FEFB4F94D966C74694C /* KurentoToolbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KurentoToolbox.debug.xcconfig; sourceTree = "<group>"; };
+		590202F4E9D00B6CF54D06F94A834F2F /* SBJson4Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4Writer.h; path = Classes/SBJson4Writer.h; sourceTree = "<group>"; };
+		5951B8EE34C5AD80CA476010EEB44683 /* NBMMediaConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMMediaConfiguration.html; path = docs/html/Classes/NBMMediaConfiguration.html; sourceTree = "<group>"; };
+		59D29F3729472C02EEEDCBABA8DB1955 /* NBMMediaConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMMediaConfiguration.m; path = Classes/WebRTC/NBMMediaConfiguration.m; sourceTree = "<group>"; };
+		5A70DA2F362F7E1F365AF19E6902F35F /* NBMJSONRPCClientError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMJSONRPCClientError.h; sourceTree = "<group>"; };
+		5AB1E71195D9FAA6B7362B5194E9A9F7 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		5B1C4BBA5F2C0120B41BE06CF941D84B /* SBJson4StreamTokeniser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamTokeniser.h; path = Classes/SBJson4StreamTokeniser.h; sourceTree = "<group>"; };
+		5E3EDAFC4B5F5F38A2D1D5BA3ABA4CAF /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		5E69EFD301249DB35297631D0D0EDFB1 /* NBMTreeEndpoint.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMTreeEndpoint.html; path = docs/html/Classes/NBMTreeEndpoint.html; sourceTree = "<group>"; };
+		5FFF1AD5BC81EA8032B4E09E76C1D94F /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
+		607FDB2A39731A308882184A85EE5C60 /* NBMWebRTCPeer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMWebRTCPeer.h; path = Classes/WebRTC/NBMWebRTCPeer.h; sourceTree = "<group>"; };
+		60B8ECCCE80AE35A065E0C4DA7325099 /* NBMEAGLRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMEAGLRenderer.m; path = Classes/WebRTC/NBMEAGLRenderer.m; sourceTree = "<group>"; };
+		6130F4B884628B0C1F88FDCA87373D04 /* _variables.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _variables.scss; path = docs/html/css/scss/_variables.scss; sourceTree = "<group>"; };
+		622F51C378335F3D79B7E0006A816D4C /* Pods-KurentoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		633AD60F8404AE9BB83BE6D9890DC005 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		6342F02A61928C7CBCB1A5A4EA1F5E54 /* KurentoToolbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KurentoToolbox-Info.plist"; sourceTree = "<group>"; };
+		636304B0D51E85409C4242924EA526DC /* SocketRocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.release.xcconfig; sourceTree = "<group>"; };
+		645D2E123174FCEC9FA99B105C27DC3F /* NBMRoomClientErrorCode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomClientErrorCode.html; path = docs/html/Constants/NBMRoomClientErrorCode.html; sourceTree = "<group>"; };
+		65F2A4F350B129C40A0065906D3CF455 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		6B11E108436F427BFCA4B7FC14A4824B /* SBJson4Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4Writer.m; path = Classes/SBJson4Writer.m; sourceTree = "<group>"; };
+		6C5ED8CBAF5FEDFCA701FF3EE63BBBBC /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		6C9F1FF506F7C6F3D441671E3DF2265A /* NBMRoomError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRoomError.m; path = Classes/Room/NBMRoomError.m; sourceTree = "<group>"; };
+		6D7F57947FE079912A6438CACA2057A8 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		6EC1110500E4B0C80DF22BC73FBDFA84 /* NBMRoomErrorCode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomErrorCode.html; path = docs/html/Constants/NBMRoomErrorCode.html; sourceTree = "<group>"; };
+		72ED3A3D4F47F5174F6334851C618B22 /* KurentoToolbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KurentoToolbox.h; path = Classes/KurentoToolbox.h; sourceTree = "<group>"; };
+		731D562E4EC2B9EA5A75F1031E07056F /* NBMJSONRPCError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMJSONRPCError.h; sourceTree = "<group>"; };
+		735369711520F73803855EE3287EEA21 /* NBMResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBMResponse+Private.h"; sourceTree = "<group>"; };
+		7386B1FF7C73AAA203227B6459782C5B /* style.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = style.css; path = docs/html/css/style.css; sourceTree = "<group>"; };
+		73BFF88C016FACCC42DAED1E7AE0D653 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		7428F25EBEEDA8049E16915657657897 /* JSON-RPC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSON-RPC.h"; path = "Classes/JSON-RPC/JSON-RPC.h"; sourceTree = "<group>"; };
+		74C15F1244F4E22BEA5CF8DA4BEBB08B /* NBMRoomClientConnectionState.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomClientConnectionState.html; path = docs/html/Constants/NBMRoomClientConnectionState.html; sourceTree = "<group>"; };
+		75CD6DC493EFD87A0E13486CF41D1051 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		773E17E88A753E611A5CB40C4507671C /* NBMJSONRPCUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMJSONRPCUtilities.m; sourceTree = "<group>"; };
+		7953BA8968AC1F4B32C6E365B7DCE575 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		7A68F62B026731DD92440BD967AB34CF /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
+		7AD05F5840E57273B29D0C3EC7D9444A /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		7C81F9C585528268F14669DA8947CB42 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		7C921E166959512A834116760DEC21B5 /* NBMTreeClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMTreeClient.m; path = Classes/Tree/NBMTreeClient.m; sourceTree = "<group>"; };
+		7D8190602F960B41D804394BFA891BFE /* NBMEAGLRenderer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMEAGLRenderer.html; path = docs/html/Classes/NBMEAGLRenderer.html; sourceTree = "<group>"; };
+		7DF8E13852C1FF9C9DD2FE77DA9F957F /* NBMJSONRPCClientDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMJSONRPCClientDelegate.html; path = docs/html/Protocols/NBMJSONRPCClientDelegate.html; sourceTree = "<group>"; };
+		7E2A329316899315306D098D7794F218 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		7EA62C22289FC1741D53868E1D4D3BAB /* NBMResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMResponse.m; path = "Classes/JSON-RPC/NBMResponse.m"; sourceTree = "<group>"; };
+		7F61A6913DA65F3FD84A4DFAEE165D82 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		7FA98DBE7581B7A02CEB04492EB7F2A2 /* NBMEAGLVideoViewContainer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMEAGLVideoViewContainer.html; path = docs/html/Classes/NBMEAGLVideoViewContainer.html; sourceTree = "<group>"; };
+		801F3151DB47D5825003841509AFA450 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		8106EFE9A0A92C88305048CF7924AC5F /* NBMRoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoom.h; path = Classes/Room/NBMRoom.h; sourceTree = "<group>"; };
+		81AEB22BC6573E2A67CF8A277C0AB539 /* Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8265666FD9C27B90A120268FDA3CA514 /* NBMPeerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMPeerConnection.m; path = Classes/WebRTC/NBMPeerConnection.m; sourceTree = "<group>"; };
+		850E75852913E5013B800496F2DF509D /* Pods-KurentoDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KurentoDemoTests-dummy.m"; sourceTree = "<group>"; };
+		856A91ADC411CEAEDA5282587ACE0559 /* title_background.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = title_background.png; path = docs/html/img/title_background.png; sourceTree = "<group>"; };
+		85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		861B117448C4AB9365896793CCF4EF81 /* RTCMediaStream+Configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTCMediaStream+Configuration.h"; sourceTree = "<group>"; };
+		87287A9015F44782C5D3D35450554C3E /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88257897A31DAB2EE2CE326541926947 /* SBJson4StreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamParser.m; path = Classes/SBJson4StreamParser.m; sourceTree = "<group>"; };
+		88AD86A345423422D34500DB6249E6F9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		88D1CDEF0DEBC8ED94E700BBB837F974 /* NBMRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRenderer.h; path = Classes/WebRTC/NBMRenderer.h; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A816623F170D25C6C10C6C71DDB779 /* NBMJSONRPCClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMJSONRPCClientDelegate.h; path = "Classes/JSON-RPC/NBMJSONRPCClientDelegate.h"; sourceTree = "<group>"; };
+		8D025C8E9CC0106E51D780CE439C22EB /* SBJson4StreamWriterState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamWriterState.h; path = Classes/SBJson4StreamWriterState.h; sourceTree = "<group>"; };
+		8D1644095EF62CBFAEE7DCD116DFAD34 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		8D4D8DE91D923BE3941418D2AD62043B /* SBJson4Parser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4Parser.m; path = Classes/SBJson4Parser.m; sourceTree = "<group>"; };
+		8E77D5A723A226A667C18D86A538E1EE /* SBJson-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-prefix.pch"; sourceTree = "<group>"; };
+		90F34098FBDFBC5956F34D40AF2406C1 /* KurentoToolbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KurentoToolbox.modulemap; sourceTree = "<group>"; };
+		91E6163B2D1808A6F3BB6F6D7D1A41B5 /* Pods-KurentoDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		921B3CF03E31C12CABC19E6DAB72BA61 /* NBMJSONRPCClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMJSONRPCClient.h; path = "Classes/JSON-RPC/NBMJSONRPCClient.h"; sourceTree = "<group>"; };
+		9231A8038F7118F0829EC5BD21FD0FF5 /* NBMTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMTypes.h; path = Classes/WebRTC/NBMTypes.h; sourceTree = "<group>"; };
+		9236DB3066607320C312963169D60217 /* NBMWebRTCPeer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMWebRTCPeer.html; path = docs/html/Classes/NBMWebRTCPeer.html; sourceTree = "<group>"; };
+		9314A26DCEAA425C122112EFF51200C8 /* NBMRoomClient.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomClient.html; path = docs/html/Classes/NBMRoomClient.html; sourceTree = "<group>"; };
+		95080EEEA4DE85D9DD55FE1BC997DD25 /* disclosure.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = disclosure.png; path = docs/html/img/disclosure.png; sourceTree = "<group>"; };
+		955CEC161E9A93C99ECB6204E990A6F0 /* NBMMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMMessage.h; path = "Classes/JSON-RPC/NBMMessage.h"; sourceTree = "<group>"; };
+		9687E34CB120BD99B8F3470C2FE72D1E /* _normalize.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _normalize.scss; path = docs/html/css/scss/_normalize.scss; sourceTree = "<group>"; };
+		96FBD40324B1BE5B002708DC /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		971AF5FE7D615C6DCFA3676707D1728A /* Pods-KurentoDemo-KurentoDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KurentoDemo-KurentoDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		9739DB1848A7CFD438573DDC8EC97DE1 /* Pods-KurentoDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KurentoDemoTests.modulemap"; sourceTree = "<group>"; };
+		9899C4C627C1E92E4C32ACFAFC5D27CB /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		9927682542E6992BC80AE7E3B2B5E321 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SocketRocket.modulemap; sourceTree = "<group>"; };
+		996A528687EEB827FE2CABFD3F9318A5 /* NBMRoomClientDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoomClientDelegate.html; path = docs/html/Protocols/NBMRoomClientDelegate.html; sourceTree = "<group>"; };
+		9A48A0761AD3E60A36AB761A4C47DE55 /* Pods-KurentoDemo-KurentoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemo-KurentoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B73776544AB6854E96A46D624259879 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		9C932FE5FEB3DAE4FF4362B6B13255F2 /* NBMJSONRPCConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMJSONRPCConstants.m; path = "Classes/JSON-RPC/NBMJSONRPCConstants.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EBCE0DF8A7AF2201D7C74163D431F8E /* _layout.scss */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = _layout.scss; path = docs/html/css/scss/_layout.scss; sourceTree = "<group>"; };
+		A029CBCDB69E2CBD2273735ADE11BA5B /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		A050A816CBAD3A62D6F0C2E13D9EE430 /* CocoaLumberjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.debug.xcconfig; sourceTree = "<group>"; };
+		A2CB9F048DD04697AF686464EC92DE21 /* Pods-KurentoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KurentoDemo-dummy.m"; sourceTree = "<group>"; };
+		A309987D9C2BA204D417314C882FD934 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		A40E077CCBCC7D7839E25B872156D4EE /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		A45C220D4927274B5B30B51721D86DF5 /* NBMError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMError.m; path = Classes/Utils/NBMError.m; sourceTree = "<group>"; };
+		A4685B0B9A2CF6281E23ECBEB6FE20AB /* RTCMediaStream+Configuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RTCMediaStream+Configuration.m"; sourceTree = "<group>"; };
+		A48615CDDE42E1FC1207BF9127432FB2 /* Pods-KurentoDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KurentoDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		A4F45CF7D489A6827456C64756086AC5 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
+		A6985275BE1EDFD1097E9D92C8FF3E99 /* KurentoToolbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KurentoToolbox-umbrella.h"; sourceTree = "<group>"; };
+		A8A87509D30137FF16CD6C23FFDB6719 /* NBMCameraPosition.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMCameraPosition.html; path = docs/html/Constants/NBMCameraPosition.html; sourceTree = "<group>"; };
+		A8BD2B24FC7D90C183E5C7D6F3480907 /* NBMTreeClientError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMTreeClientError.m; sourceTree = "<group>"; };
+		A9855522E498148BAE9B69965EEAD55D /* NBMTreeClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMTreeClientDelegate.h; path = Classes/Tree/NBMTreeClientDelegate.h; sourceTree = "<group>"; };
+		AC67F90FD09013ACCAEAD85E5B5D3AE8 /* disclosure_open.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = disclosure_open.png; path = docs/html/img/disclosure_open.png; sourceTree = "<group>"; };
+		AD15606783DCE8BCA8BE9F011D7FD3DC /* KurentoToolbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KurentoToolbox.release.xcconfig; sourceTree = "<group>"; };
+		AD24529BF403DA7630D8982903A72A61 /* NBMSettingsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMSettingsModel.h; path = Classes/WebRTC/NBMSettingsModel.h; sourceTree = "<group>"; };
+		ADA3A351330A4A089AE3E2F776669330 /* NBMTreeEndpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMTreeEndpoint.h; path = Classes/Tree/NBMTreeEndpoint.h; sourceTree = "<group>"; };
+		ADC1FFCA4397FA5B5B09D70420B9C6DE /* KurentoToolbox.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KurentoToolbox.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0CF853C5B8199AF7D8353DE68E1321A /* NBMPeer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMPeer.h; path = Classes/Room/NBMPeer.h; sourceTree = "<group>"; };
+		B0F823DE704406F91946EDD9E645F7E2 /* NBMRendererType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRendererType.html; path = docs/html/Constants/NBMRendererType.html; sourceTree = "<group>"; };
+		B2B1A05DBFB206576FFD8DB40ECE9B11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3831B609C408FD6EB6FA4B5FF3904E2 /* NBMWebRTCPeer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMWebRTCPeer.m; path = Classes/WebRTC/NBMWebRTCPeer.m; sourceTree = "<group>"; };
+		B3E2B2FA42ACD92ADC5E5C95668BF04E /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		B5E35599B1787D3B53D57D445D186B93 /* SBJson4StreamWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriter.m; path = Classes/SBJson4StreamWriter.m; sourceTree = "<group>"; };
+		B62579976802607BFCE54ECEE6470439 /* Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B66627340CB242470F7F66DCEE351A29 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		B671DB599808767D2488F7CE56494983 /* SBJson4StreamWriterState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamWriterState.m; path = Classes/SBJson4StreamWriterState.m; sourceTree = "<group>"; };
+		B6F15160CC5C002823C87DAEC0B09854 /* index.rst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = index.rst; path = docs/index.rst; sourceTree = "<group>"; };
+		B6FE4912EA87721296D780322339444F /* NBMJSONRPCError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMJSONRPCError.m; sourceTree = "<group>"; };
+		B8AA33821CAD8BF9981001062EA96727 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		B8F6B2973B98E1B84D88E1FE3D68AA28 /* SBJson4StreamTokeniser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson4StreamTokeniser.m; path = Classes/SBJson4StreamTokeniser.m; sourceTree = "<group>"; };
+		B9197D804E6EC40B507B792F926D2F86 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		B936D55BBBC19C8C8A26ADF700C9089B /* NBMJSONRPCClientError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMJSONRPCClientError.m; sourceTree = "<group>"; };
+		BA467A518CF75CD68BBA4661B4C762AC /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		BB6F8688C2CCA21DFA3DB29EA7945E5B /* NBMSessionDescriptionFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NBMSessionDescriptionFactory.m; sourceTree = "<group>"; };
+		BC2AE0A6720F44DCF966E4496EB5EC3E /* NBMTreeClient.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMTreeClient.html; path = docs/html/Classes/NBMTreeClient.html; sourceTree = "<group>"; };
+		BD6B37192A1BE98DD14D9BAEA9E6940A /* NBMRoom.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMRoom.html; path = docs/html/Classes/NBMRoom.html; sourceTree = "<group>"; };
+		BE6308CABA8228106A03A61E9F62B397 /* NBMJSONRPCUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMJSONRPCUtilities.h; sourceTree = "<group>"; };
+		BF1FD7D6A235E0EE5DD0B322ABCA8CD9 /* NBMCaptureController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMCaptureController.h; path = Classes/WebRTC/NBMCaptureController.h; sourceTree = "<group>"; };
+		BF239E07343961E4C2CD4A4AC803653B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BF5B0CD16CFFE35AE98F5D2D175E41F3 /* Pods-KurentoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF7CA6C07D769537B52DA5B53FD45F67 /* SocketRocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SocketRocket-Info.plist"; sourceTree = "<group>"; };
+		BF8007D7D5863B58891FDD1ACC10718C /* NBMTimeoutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMTimeoutable.h; sourceTree = "<group>"; };
+		C0DE6A81DE0EE3AC4AB5F425B41A1214 /* Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C344DC1716D11FBE8A69B573D3C1F874 /* NBMRoomClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomClientDelegate.h; path = Classes/Room/NBMRoomClientDelegate.h; sourceTree = "<group>"; };
+		C47259156CF2FB51663C5D41999CA604 /* NBMResponseError.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMResponseError.html; path = docs/html/Classes/NBMResponseError.html; sourceTree = "<group>"; };
+		C4AAAFB18A0A68937C1F3F49594D28E1 /* Pods-KurentoDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KurentoDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5B7D15E74F70C2754F5ADCBEDA624C7 /* NBMTransportChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMTransportChannel.h; sourceTree = "<group>"; };
+		C6A489A1228C6664B7E82E657D816A81 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		C724B1B753AFCC53AB7405AFC1D006E0 /* Pods-KurentoDemo-KurentoDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KurentoDemo-KurentoDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C83B2AE3A649C0C099620589EAEFDCD9 /* NBMEAGLVideoViewContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMEAGLVideoViewContainer.m; path = Classes/WebRTC/NBMEAGLVideoViewContainer.m; sourceTree = "<group>"; };
+		C8D5AA541E81854C4229BB4CB6229769 /* NBMLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMLog.h; path = Classes/Utils/NBMLog.h; sourceTree = "<group>"; };
+		C9E24562875AA5B68B7AB61065D35478 /* Pods_KurentoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KurentoDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA27BCC651ED297A739BF6E8961C3FE5 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		CAE0C298BE7E933BACA9A7A40C273032 /* Pods-KurentoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KurentoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB38F43954D75C1A3A7268C2994CA7AC /* NBMSessionDescriptionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMSessionDescriptionFactory.h; sourceTree = "<group>"; };
+		CCA21A725A9EAF75C9BD42BC8AE75E0D /* CocoaLumberjack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.release.xcconfig; sourceTree = "<group>"; };
+		CD0F4E995BF495133D3B14F822AB3C76 /* Pods-KurentoDemo-KurentoDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KurentoDemo-KurentoDemoUITests.modulemap"; sourceTree = "<group>"; };
+		CD6A429299F248469D31A90D7EAEEBE7 /* NBMTreeClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMTreeClient.h; path = Classes/Tree/NBMTreeClient.h; sourceTree = "<group>"; };
+		D05F3E2DAD940435E5BB705D575965F5 /* library_background.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = library_background.png; path = docs/html/img/library_background.png; sourceTree = "<group>"; };
+		D0B22A57B1828C6788961C173BC1B6A8 /* NBMSettingsModel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NBMSettingsModel+Private.h"; path = "Classes/WebRTC/NBMSettingsModel+Private.h"; sourceTree = "<group>"; };
+		D0BB46FD9CB87878C7A6DCE93EADECD3 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34E0FE0F311FFC1E8101A0B18863F23 /* NBMTreeEndpoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMTreeEndpoint.m; path = Classes/Tree/NBMTreeEndpoint.m; sourceTree = "<group>"; };
+		D3850EDBC6B7860C8DC3A984A8723E21 /* NBMPeerConnection.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMPeerConnection.html; path = docs/html/Classes/NBMPeerConnection.html; sourceTree = "<group>"; };
+		D3CFD5DE295BC13E503F2FFA6FCCB887 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		D42CD66FDF79E4A952C42495937AFE79 /* NBMRoomClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMRoomClient.h; path = Classes/Room/NBMRoomClient.h; sourceTree = "<group>"; };
+		D4C2E6C569666F24F4C42FFE28785430 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		D8D0B8106BEAE2565220B62A5E8CAF7F /* SBJson.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SBJson.modulemap; sourceTree = "<group>"; };
+		D924339EE08E8EB081AA7563CC323213 /* SBJson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBJson.release.xcconfig; sourceTree = "<group>"; };
+		D99917B0D869AB550E15C58A9D8AA120 /* NBMPeer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMPeer.html; path = docs/html/Classes/NBMPeer.html; sourceTree = "<group>"; };
+		D9DE38630F416622E9A08E26013FF25A /* NBMTreeClientDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMTreeClientDelegate.html; path = docs/html/Protocols/NBMTreeClientDelegate.html; sourceTree = "<group>"; };
+		DB70509678E2010D2EE827BD990200BB /* arch.rst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = arch.rst; path = docs/arch.rst; sourceTree = "<group>"; };
+		DC1496D7CA7EB006E32A6BAA0AEDBD08 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = index.html; path = docs/html/index.html; sourceTree = "<group>"; };
+		DDF6A31DFFDAE17F80A34E666AA79832 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBF7C2ABB7A8037653AE3C6CC53013C /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		E052A69A09FCF127F4FA5D71827FB29C /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		E3625CDD970B50F66586A64742870F46 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		E582E153A55FA933C23F1EF826C01F37 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		E6F260FED78469A149506F9FC011A118 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		E715464FD0713FB07DFADC65764A7D4D /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		E8A27DA59D99CBCB9E26D749BD5AF415 /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		E8A748F92F7F3C8D8D16E9529E397F31 /* SBJson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBJson.debug.xcconfig; sourceTree = "<group>"; };
+		EC39357D28B4D6715F2130AF63F6DD33 /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParserState.h; path = Classes/SBJson4StreamParserState.h; sourceTree = "<group>"; };
+		EC6302293795FCACA9DCC59FAFC9989C /* Pods_KurentoDemo_KurentoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KurentoDemo_KurentoDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCFD8E1E4BE8B34D8C98ECBFD1497EB /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		EE57C00136033DAD311D749D7DDBE687 /* install_guide.rst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = install_guide.rst; path = docs/install_guide.rst; sourceTree = "<group>"; };
+		F005CA68BC26C8E52A3FFA9C931A0895 /* NBMResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMResponse.h; path = "Classes/JSON-RPC/NBMResponse.h"; sourceTree = "<group>"; };
+		F1062C2B5EA7279ACA74425579766B76 /* SBJson4StreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4StreamParser.h; path = Classes/SBJson4StreamParser.h; sourceTree = "<group>"; };
+		F18D75E9DBD0F985F8A2541B8853F492 /* KurentoToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KurentoToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26A9ED4FC0123AEE1AD95B167244E13 /* NBMTreeClientErrorCode.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMTreeClientErrorCode.html; path = docs/html/Constants/NBMTreeClientErrorCode.html; sourceTree = "<group>"; };
+		F3B46EDD93C0A90789780ACF418FC3AB /* NBMSettingsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMSettingsModel.m; path = Classes/WebRTC/NBMSettingsModel.m; sourceTree = "<group>"; };
+		F43A4FC805ABBCD2BD06B63530FB6676 /* NBMResponse.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMResponse.html; path = docs/html/Classes/NBMResponse.html; sourceTree = "<group>"; };
+		F673B53F429FD7BE1DE4AA931CA6FB7D /* SBJson-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-umbrella.h"; sourceTree = "<group>"; };
+		F6A808CF3534346B10CF3EC2666E9770 /* dev_guide.rst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = dev_guide.rst; path = docs/dev_guide.rst; sourceTree = "<group>"; };
+		F6BD9AAEEFCEC6DD4897C3C5817C721C /* Pods-KurentoDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KurentoDemoTests-Info.plist"; sourceTree = "<group>"; };
+		F72EC0A9520CD2722A92B0EED6D84D75 /* NBMRoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMRoom.m; path = Classes/Room/NBMRoom.m; sourceTree = "<group>"; };
+		F82499722DF986339B4D49DC3BFB0F59 /* script.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = script.js; path = docs/html/js/script.js; sourceTree = "<group>"; };
+		F98D30D24A472F48ECF23E7687C6EA54 /* NBMMessage.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = NBMMessage.html; path = docs/html/Protocols/NBMMessage.html; sourceTree = "<group>"; };
+		FB8C2C21CB1E7CCAE9AEC3538558C6E5 /* SBJson-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SBJson-Info.plist"; sourceTree = "<group>"; };
+		FBA78030C47CDD85FB9B699379FD61F1 /* Pods-KurentoDemo-KurentoDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KurentoDemo-KurentoDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		FC2A1F4A63FBC512E53AC3B11C58DAD1 /* NBMTreeClientError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NBMTreeClientError.h; sourceTree = "<group>"; };
+		FC77FFB943E1C75CCD8B3009BDB62091 /* hierarchy.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = hierarchy.html; path = docs/html/hierarchy.html; sourceTree = "<group>"; };
+		FD599E96CEEF3B09B632D75EFF0840D8 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		FE26F552EDF6C8AA64F8AA908D59B191 /* Pods-KurentoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KurentoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF085C129373F7F09C40A15AE779C4E3 /* SBJson4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson4.h; path = Classes/SBJson4.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06D13A02C2C78676487BD47CDACE3878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981838A16A6C65B5D2A393CDCFC36CD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9207EADE2E8B257AB39A8368A94E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52071431E76622716A575BE5BD6376A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2960F55F4CC7897EE19A1289F93B765C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE29222967C89392242846B1CD93BAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBAF89320F821AEDD203C3CBE47C484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FB477A10D9AA6935440E7E7AEF11C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4761F9F17D98B99128B34770B4C9FFE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50DB5CBE57732674B4B838E58D8D0BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC188EBE5C479D0F07E724B622C03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1572414BB57E1CAEB0839E30A33979C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3074BBD8ECBE8235B486A882B60E4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA884EA69210EAEF22C1358F7C0F2ED /* CocoaLumberjack.framework in Frameworks */,
+				806AA115F6369CB70D9AFA58859DDF4E /* Foundation.framework in Frameworks */,
+				2D328E9B243BAD9916EF88AD3005DCD9 /* SBJson.framework in Frameworks */,
+				96FBD40424B1BE5B002708DC /* WebRTC.framework in Frameworks */,
+				52F8668E57CB5D0D3667E3DEC20F8D15 /* SocketRocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE3C3ACB12995A4FB561AD5E83E8F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D1BBE3F67E725C566281BA045C5805 /* CFNetwork.framework in Frameworks */,
+				39C32D3C798E66F822959D543DB42D23 /* Foundation.framework in Frameworks */,
+				77245F842F28A2D1753A829BAC47A7AD /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024B237AF3C72D9E8ADFFCB53F8F7193 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				CD6A429299F248469D31A90D7EAEEBE7 /* NBMTreeClient.h */,
+				7C921E166959512A834116760DEC21B5 /* NBMTreeClient.m */,
+				A9855522E498148BAE9B69965EEAD55D /* NBMTreeClientDelegate.h */,
+				ADA3A351330A4A089AE3E2F776669330 /* NBMTreeEndpoint.h */,
+				D34E0FE0F311FFC1E8101A0B18863F23 /* NBMTreeEndpoint.m */,
+				4CEC963B78C40986D0C61B3F5956A28F /* Tree.h */,
+				BF11D12D2B4DE6177DA320EEAF0013B0 /* Internals */,
+			);
+			name = Tree;
+			sourceTree = "<group>";
+		};
+		03C25E5B935B8DEA35DD1CFE415AB9CB /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				7C81F9C585528268F14669DA8947CB42 /* SRWebSocket.h */,
+				B9197D804E6EC40B507B792F926D2F86 /* SRWebSocket.m */,
+				30B5425E563ACE6D9B9D601E1B97FB13 /* Support Files */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		0872ACF48DCADD6560547E12ED744832 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				88AD86A345423422D34500DB6249E6F9 /* CFNetwork.framework */,
+				12F422EF85C99A2DB72CA8F1D829F619 /* Foundation.framework */,
+				3ACC43AD2CB3D3A6A050C3C996E93D35 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		139A12A7B4CFED37C01812AA061CE109 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				42ACD98E9297E856331472C147A298D7 /* NBMRoomClientError.h */,
+				14BFEFAFEBF23214C9E64DA865ACB060 /* NBMRoomClientError.m */,
+			);
+			name = Internals;
+			path = Classes/Room/Internals;
+			sourceTree = "<group>";
+		};
+		15E0E3D386F02A9D739186AD3E82722A /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				FF085C129373F7F09C40A15AE779C4E3 /* SBJson4.h */,
+				20B10905C8F2CB362CC5954022B22506 /* SBJson4Parser.h */,
+				8D4D8DE91D923BE3941418D2AD62043B /* SBJson4Parser.m */,
+				F1062C2B5EA7279ACA74425579766B76 /* SBJson4StreamParser.h */,
+				88257897A31DAB2EE2CE326541926947 /* SBJson4StreamParser.m */,
+				EC39357D28B4D6715F2130AF63F6DD33 /* SBJson4StreamParserState.h */,
+				16D10FA455508A23EE8D7920C1F9035C /* SBJson4StreamParserState.m */,
+				5B1C4BBA5F2C0120B41BE06CF941D84B /* SBJson4StreamTokeniser.h */,
+				B8F6B2973B98E1B84D88E1FE3D68AA28 /* SBJson4StreamTokeniser.m */,
+				2DC4E8F5C3C252440EDAE814E4C56D0C /* SBJson4StreamWriter.h */,
+				B5E35599B1787D3B53D57D445D186B93 /* SBJson4StreamWriter.m */,
+				8D025C8E9CC0106E51D780CE439C22EB /* SBJson4StreamWriterState.h */,
+				B671DB599808767D2488F7CE56494983 /* SBJson4StreamWriterState.m */,
+				590202F4E9D00B6CF54D06F94A834F2F /* SBJson4Writer.h */,
+				6B11E108436F427BFCA4B7FC14A4824B /* SBJson4Writer.m */,
+				4A5DF255486467B845D4B71B9A5FE1C2 /* Support Files */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		2AC11013061349A8EE6AADD3AA75796A /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				72ED3A3D4F47F5174F6334851C618B22 /* KurentoToolbox.h */,
+				6CE42BB31FCFF0EE4B2C51346D478E3A /* Frameworks */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		2BE337209683D6FA4265CE1CC5630E00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA6FE594E137E232889197A77A5C8C /* CocoaLumberjack */,
+				15E0E3D386F02A9D739186AD3E82722A /* SBJson */,
+				03C25E5B935B8DEA35DD1CFE415AB9CB /* SocketRocket */,
+				64C357C297A80ED9A351FA3EF1D866B6 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30B5425E563ACE6D9B9D601E1B97FB13 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9927682542E6992BC80AE7E3B2B5E321 /* SocketRocket.modulemap */,
+				1FF79EDF6125AD4DCFEB7786705FA1D3 /* SocketRocket-dummy.m */,
+				BF7CA6C07D769537B52DA5B53FD45F67 /* SocketRocket-Info.plist */,
+				C6A489A1228C6664B7E82E657D816A81 /* SocketRocket-prefix.pch */,
+				DEBF7C2ABB7A8037653AE3C6CC53013C /* SocketRocket-umbrella.h */,
+				18183837E96E486BE3211744C0BB375D /* SocketRocket.debug.xcconfig */,
+				636304B0D51E85409C4242924EA526DC /* SocketRocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		379706B9612095585538DF7BC1C32AC6 /* KurentoToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				2AC11013061349A8EE6AADD3AA75796A /* Default */,
+				99DB1E60F4A664F09D07936E6FFCF912 /* JSON-RPC */,
+				574403F98E9FD46846F397DBE0CCF2D5 /* Pod */,
+				B4DAC171A3580D11A7898F91B652F491 /* Room */,
+				7039DA2A87BC7727FD01AA2B84446D51 /* Support Files */,
+				024B237AF3C72D9E8ADFFCB53F8F7193 /* Tree */,
+				B81DE87FBB0FBE0544764619267DF0DB /* Utils */,
+				EF97F8223AD03B4BE968CAB017305EA9 /* WebRTC */,
+			);
+			name = KurentoToolbox;
+			path = "/My Data/Souce/Framework/WebRTCKurento/KurentoToolbox";
+			sourceTree = "<absolute>";
+		};
+		495FC0AC674B28212D74F949BD582276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
+				F18D75E9DBD0F985F8A2541B8853F492 /* KurentoToolbox.framework */,
+				55EAC7E430CF4B7B3D21478C56861ADC /* Pods_KurentoDemo.framework */,
+				EC6302293795FCACA9DCC59FAFC9989C /* Pods_KurentoDemo_KurentoDemoUITests.framework */,
+				C9E24562875AA5B68B7AB61065D35478 /* Pods_KurentoDemoTests.framework */,
+				DDF6A31DFFDAE17F80A34E666AA79832 /* SBJson.framework */,
+				85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A5DF255486467B845D4B71B9A5FE1C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0B8106BEAE2565220B62A5E8CAF7F /* SBJson.modulemap */,
+				3376E3E7362267B875ABED3F23A69CAB /* SBJson-dummy.m */,
+				FB8C2C21CB1E7CCAE9AEC3538558C6E5 /* SBJson-Info.plist */,
+				8E77D5A723A226A667C18D86A538E1EE /* SBJson-prefix.pch */,
+				F673B53F429FD7BE1DE4AA931CA6FB7D /* SBJson-umbrella.h */,
+				E8A748F92F7F3C8D8D16E9529E397F31 /* SBJson.debug.xcconfig */,
+				D924339EE08E8EB081AA7563CC323213 /* SBJson.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SBJson";
+			sourceTree = "<group>";
+		};
+		574403F98E9FD46846F397DBE0CCF2D5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0A5189D71C6CE06D9F03734A77F0E /* _index.scss */,
+				9EBCE0DF8A7AF2201D7C74163D431F8E /* _layout.scss */,
+				9687E34CB120BD99B8F3470C2FE72D1E /* _normalize.scss */,
+				3F5739714F43B0D74E2E1D3EE6E169F7 /* _object.scss */,
+				1EEB9970728F779B9D21273AD70E5642 /* _print.scss */,
+				6130F4B884628B0C1F88FDCA87373D04 /* _variables.scss */,
+				427BDCEA88F13DAE6AE5C3B5FC9CE0E9 /* _xcode.scss */,
+				DB70509678E2010D2EE827BD990200BB /* arch.rst */,
+				506332A4E4959D9B5B64014B3EB012AE /* button_bar_background.png */,
+				F6A808CF3534346B10CF3EC2666E9770 /* dev_guide.rst */,
+				95080EEEA4DE85D9DD55FE1BC997DD25 /* disclosure.png */,
+				AC67F90FD09013ACCAEAD85E5B5D3AE8 /* disclosure_open.png */,
+				FC77FFB943E1C75CCD8B3009BDB62091 /* hierarchy.html */,
+				DC1496D7CA7EB006E32A6BAA0AEDBD08 /* index.html */,
+				B6F15160CC5C002823C87DAEC0B09854 /* index.rst */,
+				EE57C00136033DAD311D749D7DDBE687 /* install_guide.rst */,
+				ADC1FFCA4397FA5B5B09D70420B9C6DE /* KurentoToolbox.podspec */,
+				D05F3E2DAD940435E5BB705D575965F5 /* library_background.png */,
+				BF239E07343961E4C2CD4A4AC803653B /* LICENSE */,
+				57116D497C8AC6A4DC787ADC13733C25 /* NBMAudioCodec.html */,
+				A8A87509D30137FF16CD6C23FFDB6719 /* NBMCameraPosition.html */,
+				7D8190602F960B41D804394BFA891BFE /* NBMEAGLRenderer.html */,
+				7FA98DBE7581B7A02CEB04492EB7F2A2 /* NBMEAGLVideoViewContainer.html */,
+				3CDCD0F3D1CF7AF1E75108A518B68D88 /* NBMJSONRPCClient.html */,
+				1A9454B511313015D4D65C51F5742CDE /* NBMJSONRPCClientConfiguration.html */,
+				7DF8E13852C1FF9C9DD2FE77DA9F957F /* NBMJSONRPCClientDelegate.html */,
+				3ABA3B4A27374B8B30A4D798410E4C16 /* NBMJSONRPCConnectionState.html */,
+				5951B8EE34C5AD80CA476010EEB44683 /* NBMMediaConfiguration.html */,
+				F98D30D24A472F48ECF23E7687C6EA54 /* NBMMessage.html */,
+				D99917B0D869AB550E15C58A9D8AA120 /* NBMPeer.html */,
+				D3850EDBC6B7860C8DC3A984A8723E21 /* NBMPeerConnection.html */,
+				2B19E9D7FCD1A1DDCCD162634BB6C337 /* NBMPixelFormat.html */,
+				3065BACF06A65F3F722DAE999C5A2084 /* NBMRenderer.html */,
+				47403A120F8694AA9E6A502A27F68683 /* NBMRendererDelegate.html */,
+				B0F823DE704406F91946EDD9E645F7E2 /* NBMRendererType.html */,
+				21E2B58687F857C05E5427371C65E23A /* NBMRequest.html */,
+				F43A4FC805ABBCD2BD06B63530FB6676 /* NBMResponse.html */,
+				C47259156CF2FB51663C5D41999CA604 /* NBMResponseError.html */,
+				0EADFCD8809DE887149FAAC4260C2B52 /* NBMResponseErrorCode.html */,
+				BD6B37192A1BE98DD14D9BAEA9E6940A /* NBMRoom.html */,
+				9314A26DCEAA425C122112EFF51200C8 /* NBMRoomClient.html */,
+				74C15F1244F4E22BEA5CF8DA4BEBB08B /* NBMRoomClientConnectionState.html */,
+				996A528687EEB827FE2CABFD3F9318A5 /* NBMRoomClientDelegate.html */,
+				645D2E123174FCEC9FA99B105C27DC3F /* NBMRoomClientErrorCode.html */,
+				30E6B3A145DE9BFC6EA664FD4C2EACCB /* NBMRoomError.html */,
+				6EC1110500E4B0C80DF22BC73FBDFA84 /* NBMRoomErrorCode.html */,
+				BC2AE0A6720F44DCF966E4496EB5EC3E /* NBMTreeClient.html */,
+				D9DE38630F416622E9A08E26013FF25A /* NBMTreeClientDelegate.html */,
+				F26A9ED4FC0123AEE1AD95B167244E13 /* NBMTreeClientErrorCode.html */,
+				5E69EFD301249DB35297631D0D0EDFB1 /* NBMTreeEndpoint.html */,
+				1180E4B2C071B13FB3240D7072C409EB /* NBMVideoCodec.html */,
+				9236DB3066607320C312963169D60217 /* NBMWebRTCPeer.html */,
+				19CFD66A125501182568E82220983B72 /* NBMWebRTCPeerDelegate.html */,
+				3863A6AD809C1CFD2FA02FAA3106F0CE /* overview.rst */,
+				B2B1A05DBFB206576FFD8DB40ECE9B11 /* README.md */,
+				F82499722DF986339B4D49DC3BFB0F59 /* script.js */,
+				7386B1FF7C73AAA203227B6459782C5B /* style.css */,
+				3211D5551606B2E0770E223970CF026E /* style.scss */,
+				856A91ADC411CEAEDA5282587ACE0559 /* title_background.png */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5BB4CB95E467E5864B8A3579C545128C /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				04364D1FF5845EC3C69E8E5611E4B6B8 /* CocoaLumberjack.h */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		64C357C297A80ED9A351FA3EF1D866B6 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				9B73776544AB6854E96A46D624259879 /* Compression.swift */,
+				46B7D9FE49B137286B49A7C81C32B627 /* Data+Extensions.swift */,
+				E715464FD0713FB07DFADC65764A7D4D /* Engine.swift */,
+				00EBB3EBD1ABDFC3AF50A07D488C1F1F /* FoundationHTTPHandler.swift */,
+				1CE311AC612D4F83093878B59F84EBDE /* FoundationHTTPServerHandler.swift */,
+				4AD8CBE6B236D17021E880AA6A110EB3 /* FoundationSecurity.swift */,
+				E582E153A55FA933C23F1EF826C01F37 /* FoundationTransport.swift */,
+				7A68F62B026731DD92440BD967AB34CF /* FrameCollector.swift */,
+				E052A69A09FCF127F4FA5D71827FB29C /* Framer.swift */,
+				BA467A518CF75CD68BBA4661B4C762AC /* HTTPHandler.swift */,
+				E6F260FED78469A149506F9FC011A118 /* NativeEngine.swift */,
+				11748A52569D6972A30D1C80649C30EF /* Security.swift */,
+				13FB1FC978C09135E3292942981EB553 /* Server.swift */,
+				2DAEFD8387062865110D29AA7195C801 /* StringHTTPHandler.swift */,
+				09E6FE312479DFB5A4FBA11A67419647 /* TCPTransport.swift */,
+				35EBED9B940134A444287C03DC2C4D10 /* Transport.swift */,
+				7F61A6913DA65F3FD84A4DFAEE165D82 /* WebSocket.swift */,
+				31C04FE8EAE0B1A80841DD5868609DA5 /* WebSocketServer.swift */,
+				E8A27DA59D99CBCB9E26D749BD5AF415 /* WSCompression.swift */,
+				5FFF1AD5BC81EA8032B4E09E76C1D94F /* WSEngine.swift */,
+				C84D091839B6B4E86AE7B462F134C125 /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		6CE42BB31FCFF0EE4B2C51346D478E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96FBD40324B1BE5B002708DC /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		701B3E2C75F8F9AF6A1F52AC432144A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE74FF5AF27BB227AF940106CC5100E /* Pods-KurentoDemo */,
+				F0BF04ED86E714DB2A0F37AC21FDDDFC /* Pods-KurentoDemo-KurentoDemoUITests */,
+				887426F04C4E14B2C876498986C4CC86 /* Pods-KurentoDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7039DA2A87BC7727FD01AA2B84446D51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90F34098FBDFBC5956F34D40AF2406C1 /* KurentoToolbox.modulemap */,
+				0FD5E019A0B59EF16A6940AA80F56435 /* KurentoToolbox-dummy.m */,
+				6342F02A61928C7CBCB1A5A4EA1F5E54 /* KurentoToolbox-Info.plist */,
+				3F5529214AC28F4F84A4CF882B1927D8 /* KurentoToolbox-prefix.pch */,
+				A6985275BE1EDFD1097E9D92C8FF3E99 /* KurentoToolbox-umbrella.h */,
+				57955E23708D8FEFB4F94D966C74694C /* KurentoToolbox.debug.xcconfig */,
+				AD15606783DCE8BCA8BE9F011D7FD3DC /* KurentoToolbox.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../KurentoDemo/Pods/Target Support Files/KurentoToolbox";
+			sourceTree = "<group>";
+		};
+		748FC067C897E26674E95A5F27A97650 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A329316899315306D098D7794F218 /* CocoaLumberjack.modulemap */,
+				75CD6DC493EFD87A0E13486CF41D1051 /* CocoaLumberjack-dummy.m */,
+				A4F45CF7D489A6827456C64756086AC5 /* CocoaLumberjack-Info.plist */,
+				A40E077CCBCC7D7839E25B872156D4EE /* CocoaLumberjack-prefix.pch */,
+				A050A816CBAD3A62D6F0C2E13D9EE430 /* CocoaLumberjack.debug.xcconfig */,
+				CCA21A725A9EAF75C9BD42BC8AE75E0D /* CocoaLumberjack.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		887426F04C4E14B2C876498986C4CC86 /* Pods-KurentoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9739DB1848A7CFD438573DDC8EC97DE1 /* Pods-KurentoDemoTests.modulemap */,
+				C4AAAFB18A0A68937C1F3F49594D28E1 /* Pods-KurentoDemoTests-acknowledgements.markdown */,
+				91E6163B2D1808A6F3BB6F6D7D1A41B5 /* Pods-KurentoDemoTests-acknowledgements.plist */,
+				850E75852913E5013B800496F2DF509D /* Pods-KurentoDemoTests-dummy.m */,
+				F6BD9AAEEFCEC6DD4897C3C5817C721C /* Pods-KurentoDemoTests-Info.plist */,
+				A48615CDDE42E1FC1207BF9127432FB2 /* Pods-KurentoDemoTests-umbrella.h */,
+				BF5B0CD16CFFE35AE98F5D2D175E41F3 /* Pods-KurentoDemoTests.debug.xcconfig */,
+				FE26F552EDF6C8AA64F8AA908D59B191 /* Pods-KurentoDemoTests.release.xcconfig */,
+			);
+			name = "Pods-KurentoDemoTests";
+			path = "Target Support Files/Pods-KurentoDemoTests";
+			sourceTree = "<group>";
+		};
+		99DB1E60F4A664F09D07936E6FFCF912 /* JSON-RPC */ = {
+			isa = PBXGroup;
+			children = (
+				7428F25EBEEDA8049E16915657657897 /* JSON-RPC.h */,
+				921B3CF03E31C12CABC19E6DAB72BA61 /* NBMJSONRPCClient.h */,
+				0D5527C0F52247E57AFA61DCAC4D2F81 /* NBMJSONRPCClient.m */,
+				89A816623F170D25C6C10C6C71DDB779 /* NBMJSONRPCClientDelegate.h */,
+				288C056F023334DBD3BF03B21B9C0360 /* NBMJSONRPCConstants.h */,
+				9C932FE5FEB3DAE4FF4362B6B13255F2 /* NBMJSONRPCConstants.m */,
+				955CEC161E9A93C99ECB6204E990A6F0 /* NBMMessage.h */,
+				007EDB8ACE10770ECEB510D3E8B85A5E /* NBMRequest.h */,
+				338AF497B65F9B1A8ED154EC99F6862B /* NBMRequest.m */,
+				F005CA68BC26C8E52A3FFA9C931A0895 /* NBMResponse.h */,
+				7EA62C22289FC1741D53868E1D4D3BAB /* NBMResponse.m */,
+				CF44251C1005CD3A1096D22C16EBF479 /* Internals */,
+			);
+			name = "JSON-RPC";
+			sourceTree = "<group>";
+		};
+		A4FCC3401C28F81B9C9F1BAC806DD489 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				379706B9612095585538DF7BC1C32AC6 /* KurentoToolbox */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B4DAC171A3580D11A7898F91B652F491 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				B0CF853C5B8199AF7D8353DE68E1321A /* NBMPeer.h */,
+				2EE9662ED6E37F9F5E0A5F9C2051DEFD /* NBMPeer.m */,
+				8106EFE9A0A92C88305048CF7924AC5F /* NBMRoom.h */,
+				F72EC0A9520CD2722A92B0EED6D84D75 /* NBMRoom.m */,
+				D42CD66FDF79E4A952C42495937AFE79 /* NBMRoomClient.h */,
+				1525F3A2873B367ABE29C03DD067959A /* NBMRoomClient.m */,
+				C344DC1716D11FBE8A69B573D3C1F874 /* NBMRoomClientDelegate.h */,
+				2D8FD83998AA968195C9FAFADE831C67 /* NBMRoomConstants.h */,
+				1909E03092476BD8C9B896C9E2F01245 /* NBMRoomConstants.m */,
+				128E7A2CEA01985D141F4DDD616B0797 /* NBMRoomError.h */,
+				6C9F1FF506F7C6F3D441671E3DF2265A /* NBMRoomError.m */,
+				19F0DB8CB0D3843A8CE3667B267EEE06 /* Room.h */,
+				139A12A7B4CFED37C01812AA061CE109 /* Internals */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
+		B81DE87FBB0FBE0544764619267DF0DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				187C507DC6039C270CB21BFBCFCAD1D4 /* NBMError.h */,
+				A45C220D4927274B5B30B51721D86DF5 /* NBMError.m */,
+				C8D5AA541E81854C4229BB4CB6229769 /* NBMLog.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BF11D12D2B4DE6177DA320EEAF0013B0 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				FC2A1F4A63FBC512E53AC3B11C58DAD1 /* NBMTreeClientError.h */,
+				A8BD2B24FC7D90C183E5C7D6F3480907 /* NBMTreeClientError.m */,
+			);
+			name = Internals;
+			path = Classes/Tree/Internals;
+			sourceTree = "<group>";
+		};
+		C84D091839B6B4E86AE7B462F134C125 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66627340CB242470F7F66DCEE351A29 /* Starscream.modulemap */,
+				B3E2B2FA42ACD92ADC5E5C95668BF04E /* Starscream-dummy.m */,
+				37F8394376BE95E88738A926212E154C /* Starscream-Info.plist */,
+				38BA6245B7DCC70C5403FEFB993AC807 /* Starscream-prefix.pch */,
+				5AB1E71195D9FAA6B7362B5194E9A9F7 /* Starscream-umbrella.h */,
+				7AD05F5840E57273B29D0C3EC7D9444A /* Starscream.debug.xcconfig */,
+				73BFF88C016FACCC42DAED1E7AE0D653 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A4FCC3401C28F81B9C9F1BAC806DD489 /* Development Pods */,
+				DB99621777DD156DB7D88E02EC4BC8B3 /* Frameworks */,
+				2BE337209683D6FA4265CE1CC5630E00 /* Pods */,
+				495FC0AC674B28212D74F949BD582276 /* Products */,
+				701B3E2C75F8F9AF6A1F52AC432144A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF44251C1005CD3A1096D22C16EBF479 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				5A70DA2F362F7E1F365AF19E6902F35F /* NBMJSONRPCClientError.h */,
+				B936D55BBBC19C8C8A26ADF700C9089B /* NBMJSONRPCClientError.m */,
+				731D562E4EC2B9EA5A75F1031E07056F /* NBMJSONRPCError.h */,
+				B6FE4912EA87721296D780322339444F /* NBMJSONRPCError.m */,
+				BE6308CABA8228106A03A61E9F62B397 /* NBMJSONRPCUtilities.h */,
+				773E17E88A753E611A5CB40C4507671C /* NBMJSONRPCUtilities.m */,
+				35388C83AE1134C2E0F4E800AD061353 /* NBMRequest+Private.h */,
+				735369711520F73803855EE3287EEA21 /* NBMResponse+Private.h */,
+				BF8007D7D5863B58891FDD1ACC10718C /* NBMTimeoutable.h */,
+				4ECABC36910525029CEC310D57AEE427 /* NBMTimeoutable.m */,
+				C5B7D15E74F70C2754F5ADCBEDA624C7 /* NBMTransportChannel.h */,
+				01974202433DA8CD8707D09870EA6FCF /* NBMTransportChannel.m */,
+			);
+			name = Internals;
+			path = "Classes/JSON-RPC/Internals";
+			sourceTree = "<group>";
+		};
+		D4977CB592F4B00D261E9597923A1ADF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D4C2E6C569666F24F4C42FFE28785430 /* DDAbstractDatabaseLogger.h */,
+				ECCFD8E1E4BE8B34D8C98ECBFD1497EB /* DDAbstractDatabaseLogger.m */,
+				7953BA8968AC1F4B32C6E365B7DCE575 /* DDASLLogCapture.h */,
+				198E99B6EBA3841FE6F808385C69BA97 /* DDASLLogCapture.m */,
+				E3625CDD970B50F66586A64742870F46 /* DDASLLogger.h */,
+				9899C4C627C1E92E4C32ACFAFC5D27CB /* DDASLLogger.m */,
+				6D7F57947FE079912A6438CACA2057A8 /* DDAssertMacros.h */,
+				50C20A3BE534353B5F772B5C10503D42 /* DDFileLogger.h */,
+				B8AA33821CAD8BF9981001062EA96727 /* DDFileLogger.m */,
+				633AD60F8404AE9BB83BE6D9890DC005 /* DDLegacyMacros.h */,
+				65F2A4F350B129C40A0065906D3CF455 /* DDLog.h */,
+				A029CBCDB69E2CBD2273735ADE11BA5B /* DDLog.m */,
+				5E3EDAFC4B5F5F38A2D1D5BA3ABA4CAF /* DDLog+LOGV.h */,
+				801F3151DB47D5825003841509AFA450 /* DDLogMacros.h */,
+				A309987D9C2BA204D417314C882FD934 /* DDTTYLogger.h */,
+				46665EDA5237AC80B589C40F98ED3B31 /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D9197443D558BF8E749854E6110DD256 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA27BCC651ED297A739BF6E8961C3FE5 /* DDContextFilterLogFormatter.h */,
+				6C5ED8CBAF5FEDFCA701FF3EE63BBBBC /* DDContextFilterLogFormatter.m */,
+				FD599E96CEEF3B09B632D75EFF0840D8 /* DDDispatchQueueLogFormatter.h */,
+				D3CFD5DE295BC13E503F2FFA6FCCB887 /* DDDispatchQueueLogFormatter.m */,
+				8D1644095EF62CBFAEE7DCD116DFAD34 /* DDMultiFormatter.h */,
+				4C03D23620A6681D49EB3488CC154E25 /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DADAFF6B6C961C45A13C7FCB6E9C65A4 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				CB38F43954D75C1A3A7268C2994CA7AC /* NBMSessionDescriptionFactory.h */,
+				BB6F8688C2CCA21DFA3DB29EA7945E5B /* NBMSessionDescriptionFactory.m */,
+				861B117448C4AB9365896793CCF4EF81 /* RTCMediaStream+Configuration.h */,
+				A4685B0B9A2CF6281E23ECBEB6FE20AB /* RTCMediaStream+Configuration.m */,
+			);
+			name = Internals;
+			path = Classes/WebRTC/Internals;
+			sourceTree = "<group>";
+		};
+		DAE74FF5AF27BB227AF940106CC5100E /* Pods-KurentoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3E299E33BB94ECA6431826466E93371E /* Pods-KurentoDemo.modulemap */,
+				CAE0C298BE7E933BACA9A7A40C273032 /* Pods-KurentoDemo-acknowledgements.markdown */,
+				2E0251F87105CFF7F13B18EA7E107D2B /* Pods-KurentoDemo-acknowledgements.plist */,
+				A2CB9F048DD04697AF686464EC92DE21 /* Pods-KurentoDemo-dummy.m */,
+				0F962A5CA87308A52143B1B5F199C35C /* Pods-KurentoDemo-frameworks.sh */,
+				0276C39601C637F1A0C60D7BB536DE3D /* Pods-KurentoDemo-Info.plist */,
+				1659E1783AB84DF47D3E2CA40B81297D /* Pods-KurentoDemo-umbrella.h */,
+				310E7CEBC63BE45287B1024E67ED4C41 /* Pods-KurentoDemo.debug.xcconfig */,
+				622F51C378335F3D79B7E0006A816D4C /* Pods-KurentoDemo.release.xcconfig */,
+			);
+			name = "Pods-KurentoDemo";
+			path = "Target Support Files/Pods-KurentoDemo";
+			sourceTree = "<group>";
+		};
+		DB99621777DD156DB7D88E02EC4BC8B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0BB46FD9CB87878C7A6DCE93EADECD3 /* CocoaLumberjack.framework */,
+				87287A9015F44782C5D3D35450554C3E /* SBJson.framework */,
+				37FBF6B8B628636640EC2554F23E8732 /* SocketRocket.framework */,
+				0872ACF48DCADD6560547E12ED744832 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF97F8223AD03B4BE968CAB017305EA9 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				BF1FD7D6A235E0EE5DD0B322ABCA8CD9 /* NBMCaptureController.h */,
+				0CFBB553032D3C1620CD81AC37F3F4E7 /* NBMCaptureController.m */,
+				268E53C692E3B6B30EB76EB85DBC255D /* NBMEAGLRenderer.h */,
+				60B8ECCCE80AE35A065E0C4DA7325099 /* NBMEAGLRenderer.m */,
+				468FDD62270F6740216E73E8053D83FF /* NBMEAGLVideoViewContainer.h */,
+				C83B2AE3A649C0C099620589EAEFDCD9 /* NBMEAGLVideoViewContainer.m */,
+				22E8AA84FCCEBFFCDDB483CFD4F6FA5D /* NBMMediaConfiguration.h */,
+				59D29F3729472C02EEEDCBABA8DB1955 /* NBMMediaConfiguration.m */,
+				076EB9F64E794A27F41B073EC2F66859 /* NBMPeerConnection.h */,
+				8265666FD9C27B90A120268FDA3CA514 /* NBMPeerConnection.m */,
+				88D1CDEF0DEBC8ED94E700BBB837F974 /* NBMRenderer.h */,
+				AD24529BF403DA7630D8982903A72A61 /* NBMSettingsModel.h */,
+				F3B46EDD93C0A90789780ACF418FC3AB /* NBMSettingsModel.m */,
+				D0B22A57B1828C6788961C173BC1B6A8 /* NBMSettingsModel+Private.h */,
+				465AF159E6F8588C5A9A21154D6FECB2 /* NBMSettingsStore.h */,
+				39A2217ABAEECB8D85ADDBBBD64B82DD /* NBMSettingsStore.m */,
+				9231A8038F7118F0829EC5BD21FD0FF5 /* NBMTypes.h */,
+				607FDB2A39731A308882184A85EE5C60 /* NBMWebRTCPeer.h */,
+				B3831B609C408FD6EB6FA4B5FF3904E2 /* NBMWebRTCPeer.m */,
+				31502C0830608B8F2E90E4B105B89F4F /* WebRTC.h */,
+				DADAFF6B6C961C45A13C7FCB6E9C65A4 /* Internals */,
+			);
+			name = WebRTC;
+			sourceTree = "<group>";
+		};
+		F0BF04ED86E714DB2A0F37AC21FDDDFC /* Pods-KurentoDemo-KurentoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F4E995BF495133D3B14F822AB3C76 /* Pods-KurentoDemo-KurentoDemoUITests.modulemap */,
+				B62579976802607BFCE54ECEE6470439 /* Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.markdown */,
+				81AEB22BC6573E2A67CF8A277C0AB539 /* Pods-KurentoDemo-KurentoDemoUITests-acknowledgements.plist */,
+				FBA78030C47CDD85FB9B699379FD61F1 /* Pods-KurentoDemo-KurentoDemoUITests-dummy.m */,
+				C724B1B753AFCC53AB7405AFC1D006E0 /* Pods-KurentoDemo-KurentoDemoUITests-frameworks.sh */,
+				4BF86E9C0FF6C8A667452DC581D22617 /* Pods-KurentoDemo-KurentoDemoUITests-Info.plist */,
+				971AF5FE7D615C6DCFA3676707D1728A /* Pods-KurentoDemo-KurentoDemoUITests-umbrella.h */,
+				C0DE6A81DE0EE3AC4AB5F425B41A1214 /* Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig */,
+				9A48A0761AD3E60A36AB761A4C47DE55 /* Pods-KurentoDemo-KurentoDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-KurentoDemo-KurentoDemoUITests";
+			path = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests";
+			sourceTree = "<group>";
+		};
+		F1AA6FE594E137E232889197A77A5C8C /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				D4977CB592F4B00D261E9597923A1ADF /* Core */,
+				5BB4CB95E467E5864B8A3579C545128C /* Default */,
+				D9197443D558BF8E749854E6110DD256 /* Extensions */,
+				748FC067C897E26674E95A5F27A97650 /* Support Files */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DCE11CEE73670BD1E3449B6D583B763 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26E44FE5011D52554234289E1F2887B /* JSON-RPC.h in Headers */,
+				EEDA707F68202367793C29A63C256B91 /* KurentoToolbox-umbrella.h in Headers */,
+				1EAD1E78E319491E7E558FF51F88A0D9 /* KurentoToolbox.h in Headers */,
+				72C78C0F1639ACCF5C3F4B1C993B3246 /* NBMCaptureController.h in Headers */,
+				1D6F3179E5B887B8A1549635129CB6E1 /* NBMEAGLRenderer.h in Headers */,
+				5D6D0709D800FA56A20951D2FB669CFA /* NBMEAGLVideoViewContainer.h in Headers */,
+				FBF94F5ECAC9A1CCED25B201CF7EC856 /* NBMError.h in Headers */,
+				7EB7DCE6D72B0F52A3CAFF7796D43613 /* NBMJSONRPCClient.h in Headers */,
+				7D72164BC35A3B2E3CEF84D935361568 /* NBMJSONRPCClientDelegate.h in Headers */,
+				73478CD7BDEEBFE91BCBCBB559C827E0 /* NBMJSONRPCClientError.h in Headers */,
+				4D79F8C8739761C3755BDCD0C039D8C2 /* NBMJSONRPCConstants.h in Headers */,
+				A726F8AF0AC64B15163BEBA061D2841A /* NBMJSONRPCError.h in Headers */,
+				207A085CAE30B961865712FEEC013C55 /* NBMJSONRPCUtilities.h in Headers */,
+				5F3F9E714D77F6E1166D81BF09FDA97C /* NBMLog.h in Headers */,
+				F118C3C2218AD556EAA60EFE9C0830AF /* NBMMediaConfiguration.h in Headers */,
+				45DEB781E82D129F401E0B8392686C6F /* NBMMessage.h in Headers */,
+				9C8586540C75444981C06C54965DE08A /* NBMPeer.h in Headers */,
+				BDF5D785F3D08A82DE6568F5B95A1179 /* NBMPeerConnection.h in Headers */,
+				3DBD9F3B559384B25131A53CC2727A28 /* NBMRenderer.h in Headers */,
+				04EB6AD0C17DD668F18219237DB53D8D /* NBMRequest+Private.h in Headers */,
+				662463CD2B03483AE730DFDB57963FAB /* NBMRequest.h in Headers */,
+				7C45A08A0F46ED0B9DF9630088A219EF /* NBMResponse+Private.h in Headers */,
+				CB9CBC123421E52771CAFE708BD64E60 /* NBMResponse.h in Headers */,
+				D622318B091127845350339DE060CBE6 /* NBMRoom.h in Headers */,
+				EEB2153610522E92606D1C0D6E2F519E /* NBMRoomClient.h in Headers */,
+				DED72258978C28E53946A26BE89AFA06 /* NBMRoomClientDelegate.h in Headers */,
+				336DDE08AD148B9C17D78EB37224E110 /* NBMRoomClientError.h in Headers */,
+				F21AC9F18329646A0F67B7AC106D58E0 /* NBMRoomConstants.h in Headers */,
+				DF607ED61CB35926DA71528EF5B82E4D /* NBMRoomError.h in Headers */,
+				C59E7EF8609E2075EF4B55CEBCDE4DF7 /* NBMSessionDescriptionFactory.h in Headers */,
+				2DCC548F7328155210C9F1AE93DC1604 /* NBMSettingsModel+Private.h in Headers */,
+				11C3AF7EE7364C40F9B0CA64D773312D /* NBMSettingsModel.h in Headers */,
+				082D889596192F4536215A52FF412496 /* NBMSettingsStore.h in Headers */,
+				ECB75A4D5D187B99A33892D77839871A /* NBMTimeoutable.h in Headers */,
+				7F819735F3867A648B66CC8F83C47D13 /* NBMTransportChannel.h in Headers */,
+				5689EBC7D1469D292FAC7F7823EC23D5 /* NBMTreeClient.h in Headers */,
+				19E11B02DE27F131DF3264B06DAC6313 /* NBMTreeClientDelegate.h in Headers */,
+				5306B0DEF4CAEBF266E6FDBE590AF5BE /* NBMTreeClientError.h in Headers */,
+				A156A0B267886EC33B290FD66624C5AE /* NBMTreeEndpoint.h in Headers */,
+				CDA79009381BDDCB18F77ACE5E3C0774 /* NBMTypes.h in Headers */,
+				2DAB73EC1E3862C4D031A136B9C2B145 /* NBMWebRTCPeer.h in Headers */,
+				1B70A707741A519DCF36065E20123460 /* Room.h in Headers */,
+				AC653A360D3B2932E9CE017BF5A91A2A /* RTCMediaStream+Configuration.h in Headers */,
+				02ED285694F78459FC3921EF7BCC263B /* Tree.h in Headers */,
+				BBD6C03D09ADBE47B692F4D14EEDAC78 /* WebRTC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2668EA2610DA398B648722DABB4AE39A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4028795E7516E8F9AD519CD7BD4140A4 /* SBJson-umbrella.h in Headers */,
+				55A22CACFE15E557B02FAA9D552F2532 /* SBJson4.h in Headers */,
+				8F8F8070EDB19BBD15531130636F8176 /* SBJson4Parser.h in Headers */,
+				4FB7E3BF0CAF7FE698B0D07A8020A669 /* SBJson4StreamParser.h in Headers */,
+				1ABE34D8C74B51BD91E367AD424C9302 /* SBJson4StreamParserState.h in Headers */,
+				333C860D608F8B01945F3E59B45B7FB6 /* SBJson4StreamTokeniser.h in Headers */,
+				98BF03A3D2F976B58B532AD298A71AEC /* SBJson4StreamWriter.h in Headers */,
+				2AD62D006D0B7F72F7AC1E546D7DA3EB /* SBJson4StreamWriterState.h in Headers */,
+				FA049C72ECA9987C0D989218F42A9355 /* SBJson4Writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835838FBCB376991C41FDE8ADB605D23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAE110A98AA9853BDF237257A2FD5E0 /* CocoaLumberjack.h in Headers */,
+				3F19993965A0EAC6735BB2EAA844B61B /* DDAbstractDatabaseLogger.h in Headers */,
+				EE289A3E6AB97035706581E0AE8FE198 /* DDASLLogCapture.h in Headers */,
+				475CFA330F133D2C699FF267DB96D5DE /* DDASLLogger.h in Headers */,
+				328A1949567472667CFB352B156ACCE6 /* DDAssertMacros.h in Headers */,
+				013A9BD510F309BBC96309133A0E5176 /* DDContextFilterLogFormatter.h in Headers */,
+				DA0F9B00330E8D715030A74A36E1C846 /* DDDispatchQueueLogFormatter.h in Headers */,
+				9446C3740D7C9E09CE8747D2D104D193 /* DDFileLogger.h in Headers */,
+				12994CB50F4973CAD00D1FF41AA1A1DB /* DDLegacyMacros.h in Headers */,
+				E68B2D0ABDA7510F2E61CC5EAD6B8D2B /* DDLog+LOGV.h in Headers */,
+				BA79DE6518F1C30B2BBDF316DEF8CB1A /* DDLog.h in Headers */,
+				425BCECFB56F032EB795319812E72C52 /* DDLogMacros.h in Headers */,
+				3271F9C1B4ADCF1CD6BFBF2E0B3133DA /* DDMultiFormatter.h in Headers */,
+				2C94C4B451C110BF68B89BFAD5DF6D39 /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FBCA80FAEACC5AC57CFF6DC4ED4EB1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CC2D5DC15DBA9F5A494E76FF940B62 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD0915CB17C0C3864355D1B4DE4CDD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2667C3C4D4DAF1F138835F513015D57 /* SocketRocket-umbrella.h in Headers */,
+				28F5579EF1F978871D0F10268100CE0A /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1945E324B005AA1CBED5DE590BF1A0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460D3060E87BB77AB190F495737F9183 /* Pods-KurentoDemo-KurentoDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7325C178B1743DF5098504481B3642C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B4591DAF908994F6E0A3D3060699E0 /* Pods-KurentoDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD7CE9356F31CCE9065CD11D699830E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86041DB98E87F0B6F8161E28CF47D400 /* Pods-KurentoDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A44B0D8726385817902408E0941FEA /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				9AD0915CB17C0C3864355D1B4DE4CDD9 /* Headers */,
+				E8046880912BD5C2F253B6B85ADDF75B /* Sources */,
+				DCE3C3ACB12995A4FB561AD5E83E8F01 /* Frameworks */,
+				06A988A052014A3DA9BA2ED40E760EA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 85A01882ED06DFEA2E0CE78BCDB204A7 /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F19EC3DBA15A3484AB32BF96D1A535C /* Pods-KurentoDemo-KurentoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2E620C5A1466542B702059751149AC /* Build configuration list for PBXNativeTarget "Pods-KurentoDemo-KurentoDemoUITests" */;
+			buildPhases = (
+				B1945E324B005AA1CBED5DE590BF1A0D /* Headers */,
+				6C3E284591814FC9AF14A2A3DBB330F8 /* Sources */,
+				2CBAF89320F821AEDD203C3CBE47C484 /* Frameworks */,
+				D44D79CDC232AEB3BB48D8B42F5A05FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DD888FDDB062C3D16DF10174C0A3011 /* PBXTargetDependency */,
+				A5D30C08C79D98207679E2BF7E4D07EA /* PBXTargetDependency */,
+				197691A21299308951FDE96064F4CB14 /* PBXTargetDependency */,
+				39039168A3C2CB70CB2E372F09090198 /* PBXTargetDependency */,
+				40449EA60D92990E772FEA0E324FF142 /* PBXTargetDependency */,
+			);
+			name = "Pods-KurentoDemo-KurentoDemoUITests";
+			productName = "Pods-KurentoDemo-KurentoDemoUITests";
+			productReference = EC6302293795FCACA9DCC59FAFC9989C /* Pods_KurentoDemo_KurentoDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99A737B746331762ACD053E5EF1415F7 /* SBJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682563711A32534E0239C82509652691 /* Build configuration list for PBXNativeTarget "SBJson" */;
+			buildPhases = (
+				2668EA2610DA398B648722DABB4AE39A /* Headers */,
+				1C384EB56F14F177F6A1F7741FED1A0A /* Sources */,
+				06D13A02C2C78676487BD47CDACE3878 /* Frameworks */,
+				9639CE70D505C888E62C2FEA6FB225B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBJson;
+			productName = SBJson;
+			productReference = DDF6A31DFFDAE17F80A34E666AA79832 /* SBJson.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559ECA96064FF8D4E520C661A9B10569 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				8FBCA80FAEACC5AC57CFF6DC4ED4EB1C /* Headers */,
+				E7E251548CC3ABEE63D68F3918C56EC9 /* Sources */,
+				4CCC188EBE5C479D0F07E724B622C03A /* Frameworks */,
+				5724CA8FBD0D73F2A54ABBE5AA5241A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBAFCF5B0AD64BA0720649E90652F84A /* Pods-KurentoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5187A41C2FC69FF54F95D563C2CF13 /* Build configuration list for PBXNativeTarget "Pods-KurentoDemo" */;
+			buildPhases = (
+				EBD7CE9356F31CCE9065CD11D699830E /* Headers */,
+				F99C8730CCFB40EF25F25C056C20028F /* Sources */,
+				4761F9F17D98B99128B34770B4C9FFE1 /* Frameworks */,
+				7B09F17DFA8EFCAAA03C99F9AE87F972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB01064AFD5E83BD430B7FCD48B85A34 /* PBXTargetDependency */,
+				4562C50ADE196EA540C95DFC055E6C6C /* PBXTargetDependency */,
+				2AD5A50C989676F1817C3FCF1D48E0B5 /* PBXTargetDependency */,
+				2F1847A897F9AEC43BC2F8FC76B1A3AC /* PBXTargetDependency */,
+				BB80067659CDB7F6A6F884F5ED3F664F /* PBXTargetDependency */,
+			);
+			name = "Pods-KurentoDemo";
+			productName = "Pods-KurentoDemo";
+			productReference = 55EAC7E430CF4B7B3D21478C56861ADC /* Pods_KurentoDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F22D7F96AA8C9A826774A94FFE03D2 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				835838FBCB376991C41FDE8ADB605D23 /* Headers */,
+				42E72ED604A02CFF71033CEA46E7AAAA /* Sources */,
+				2960F55F4CC7897EE19A1289F93B765C /* Frameworks */,
+				1284FE9FA930D8E198C6C06D141FE046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDCFFCAF28563213A5C17E07D76361FA /* KurentoToolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77556399C79C91EAD86F5845B39DDAA /* Build configuration list for PBXNativeTarget "KurentoToolbox" */;
+			buildPhases = (
+				0DCE11CEE73670BD1E3449B6D583B763 /* Headers */,
+				7E932E93D53D03E35F55567B9C99ABA7 /* Sources */,
+				B3074BBD8ECBE8235B486A882B60E4DC /* Frameworks */,
+				CEFED08DD150D7D795ECA2957819B99B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECF735F488C3561E843ECA9C88ADE19 /* PBXTargetDependency */,
+				EEA7947342EDAFCDF01D2641CBD72D41 /* PBXTargetDependency */,
+				2E94EDDB8E7AF386F8D78733A1CEE0AE /* PBXTargetDependency */,
+			);
+			name = KurentoToolbox;
+			productName = KurentoToolbox;
+			productReference = F18D75E9DBD0F985F8A2541B8853F492 /* KurentoToolbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEB2117753B4C9D928B1325150D31BE9 /* Pods-KurentoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD58CC1EF40757D5D57977F2151B7BFC /* Build configuration list for PBXNativeTarget "Pods-KurentoDemoTests" */;
+			buildPhases = (
+				E7325C178B1743DF5098504481B3642C /* Headers */,
+				C5AFFCD4CD0854B65CF232359C611BF7 /* Sources */,
+				0F9207EADE2E8B257AB39A8368A94E04 /* Frameworks */,
+				AB7AD7512F44904E3021C10EAF455C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48B977D5E3CC6444DD0E69E9D845FE25 /* PBXTargetDependency */,
+			);
+			name = "Pods-KurentoDemoTests";
+			productName = "Pods-KurentoDemoTests";
+			productReference = C9E24562875AA5B68B7AB61065D35478 /* Pods_KurentoDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 495FC0AC674B28212D74F949BD582276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
+				EDCFFCAF28563213A5C17E07D76361FA /* KurentoToolbox */,
+				BBAFCF5B0AD64BA0720649E90652F84A /* Pods-KurentoDemo */,
+				7F19EC3DBA15A3484AB32BF96D1A535C /* Pods-KurentoDemo-KurentoDemoUITests */,
+				EEB2117753B4C9D928B1325150D31BE9 /* Pods-KurentoDemoTests */,
+				99A737B746331762ACD053E5EF1415F7 /* SBJson */,
+				1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06A988A052014A3DA9BA2ED40E760EA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1284FE9FA930D8E198C6C06D141FE046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5724CA8FBD0D73F2A54ABBE5AA5241A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B09F17DFA8EFCAAA03C99F9AE87F972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9639CE70D505C888E62C2FEA6FB225B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7AD7512F44904E3021C10EAF455C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFED08DD150D7D795ECA2957819B99B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44D79CDC232AEB3BB48D8B42F5A05FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C384EB56F14F177F6A1F7741FED1A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE8D81E868D4272B3DD1E2A34BFACE6 /* SBJson-dummy.m in Sources */,
+				D7AB5F5F34FBF62FAA1B18D47FE13919 /* SBJson4Parser.m in Sources */,
+				0E2E2896ADA3C8D82AA48FA7F67717BB /* SBJson4StreamParser.m in Sources */,
+				546C48A95BB343D7B677AA6F055AA61A /* SBJson4StreamParserState.m in Sources */,
+				D403C1F81490EBDE439F95C048DD1EDD /* SBJson4StreamTokeniser.m in Sources */,
+				6CC70FACFA971E0DA9655DA2FF7E6011 /* SBJson4StreamWriter.m in Sources */,
+				E4EC349D7C2903D1EF7EF304126BEA30 /* SBJson4StreamWriterState.m in Sources */,
+				B455E875A8388E093C422AE5B3E8AFD6 /* SBJson4Writer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E72ED604A02CFF71033CEA46E7AAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD39B281DE0971EBD689875678BF644B /* CocoaLumberjack-dummy.m in Sources */,
+				698B368727F30370C06D024BF2F9DE97 /* DDAbstractDatabaseLogger.m in Sources */,
+				717AB8BA91295971D775063206C07849 /* DDASLLogCapture.m in Sources */,
+				30819DBFF40429C3CF8736353561851A /* DDASLLogger.m in Sources */,
+				A95BC3B4A1E78C642125D806B393A1AE /* DDContextFilterLogFormatter.m in Sources */,
+				DE8A48B72454336EC234111393FFE553 /* DDDispatchQueueLogFormatter.m in Sources */,
+				E23500BB8F5F65AF1ED575724E708F10 /* DDFileLogger.m in Sources */,
+				C89C1A57F7624E1647F1D589D2685D9F /* DDLog.m in Sources */,
+				7B754FF24E4BEC9E0383E1A4FB1CC522 /* DDMultiFormatter.m in Sources */,
+				C23A21839F21390A284773C17C20255A /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3E284591814FC9AF14A2A3DBB330F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A8BD27F55ACD28F8EB65063AF7057D /* Pods-KurentoDemo-KurentoDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E932E93D53D03E35F55567B9C99ABA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71F6186BF4E49AAE25E75FB0C7BCB8B /* KurentoToolbox-dummy.m in Sources */,
+				7B8923D0362DE030C667C99A092C4788 /* NBMCaptureController.m in Sources */,
+				9BF2466E37F6DF72F2533DE12C42CAF3 /* NBMEAGLRenderer.m in Sources */,
+				DEFF2336BB8B94E92CD455AD468E8D29 /* NBMEAGLVideoViewContainer.m in Sources */,
+				A58006FE5E5F9C1FBDA33C3CE8F01BC4 /* NBMError.m in Sources */,
+				770533A59739432A1B6983E2AF7BC0E6 /* NBMJSONRPCClient.m in Sources */,
+				AC02CE77BF71C513E13BCC08944D5E5E /* NBMJSONRPCClientError.m in Sources */,
+				62971117DF907BDCD8C6BE4930869EA6 /* NBMJSONRPCConstants.m in Sources */,
+				AF2A8D5E232C111D732706D4452C5ABA /* NBMJSONRPCError.m in Sources */,
+				D1360511BE4B50893546C8D4EBC2D17E /* NBMJSONRPCUtilities.m in Sources */,
+				0C5855A309B6945E52FFE1F785FE7583 /* NBMMediaConfiguration.m in Sources */,
+				2E6D97681A8E42BB57E80CE8947B19F9 /* NBMPeer.m in Sources */,
+				18F7EC5CE65997FBF1A31E0E21E49F8F /* NBMPeerConnection.m in Sources */,
+				A9352FD11B728F2EED67C57140513C1A /* NBMRequest.m in Sources */,
+				98A8FC8D636FAE85C723197D40380F85 /* NBMResponse.m in Sources */,
+				11B8EF45C2DDD14ACAE25CBD22C147EB /* NBMRoom.m in Sources */,
+				AD3407EF4859AE2089458FDA2850D04B /* NBMRoomClient.m in Sources */,
+				B7D54C5E5A082ACF7ACB85AD57B099E3 /* NBMRoomClientError.m in Sources */,
+				D529F27C779DF39D6B65171EC9B1807B /* NBMRoomConstants.m in Sources */,
+				F8B3CB64EF5470F591BE0302817D6C7E /* NBMRoomError.m in Sources */,
+				EFB3B637B041319B2E0263C3C0345588 /* NBMSessionDescriptionFactory.m in Sources */,
+				2CB7A04AE2EAD02F14B362A2F1517620 /* NBMSettingsModel.m in Sources */,
+				AF137CC48058588202074B6BD592836F /* NBMSettingsStore.m in Sources */,
+				DADD879FAF035292510EF26768DA3BD2 /* NBMTimeoutable.m in Sources */,
+				72DB3A0F69CEC67CB6E9E8BBF0619BA5 /* NBMTransportChannel.m in Sources */,
+				94565FDA9D76DBEC9F34D3E8FA8763CF /* NBMTreeClient.m in Sources */,
+				24E68AACD3AF06B0CB93FFEB52A8CE4D /* NBMTreeClientError.m in Sources */,
+				20CF5F4EAA9154C66294F6DF01AD3BAE /* NBMTreeEndpoint.m in Sources */,
+				6A65F2D70D3A2E422D894104870E9AE2 /* NBMWebRTCPeer.m in Sources */,
+				FA3EA6C296DA17B00D9A76107BFCA960 /* RTCMediaStream+Configuration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AFFCD4CD0854B65CF232359C611BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A464EDC3E472E3852B4B41931453D1 /* Pods-KurentoDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E251548CC3ABEE63D68F3918C56EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07413B05F2A3CD997EBCE9D8EE5FD08 /* Compression.swift in Sources */,
+				37E36C07C168E5737FBA757736AB1263 /* Data+Extensions.swift in Sources */,
+				0A0E8476402B53B091B91A7DE07E0008 /* Engine.swift in Sources */,
+				DA25193E27ABCAC731A9549A566C5FDB /* FoundationHTTPHandler.swift in Sources */,
+				190BC16FCBB53F6C6F2C0618B6BE7DDA /* FoundationHTTPServerHandler.swift in Sources */,
+				946911E4FFC48BF8F84D076D258A1322 /* FoundationSecurity.swift in Sources */,
+				19E712862F3F845060EA7DADEAD9BC59 /* FoundationTransport.swift in Sources */,
+				36D1530899987EF165D0AFC6D2B9EAF2 /* FrameCollector.swift in Sources */,
+				4572F22239A84AC23B262764D429E2EB /* Framer.swift in Sources */,
+				894E47358149672D5810C31E4B64AF0D /* HTTPHandler.swift in Sources */,
+				CCDFE079D2DA1E51162E69A3A28BF23F /* NativeEngine.swift in Sources */,
+				F4D86DAACC44D52F4580AD0721D10459 /* Security.swift in Sources */,
+				195E17A825CB18759C7D6511DACCB3E9 /* Server.swift in Sources */,
+				703C0586C478A922E21934D3B149A71E /* Starscream-dummy.m in Sources */,
+				1BCEC1C72A76476B70CE4B032A9D9B32 /* StringHTTPHandler.swift in Sources */,
+				359D3455A362843977E8E3076B7D8162 /* TCPTransport.swift in Sources */,
+				C2809B4763602D15A7384398343AE406 /* Transport.swift in Sources */,
+				0CC54E4D0945262C1B835B699345B034 /* WebSocket.swift in Sources */,
+				C808D0298CC1CD6C13E283663535B259 /* WebSocketServer.swift in Sources */,
+				793D18E42CC454D1C4225339797DB9EB /* WSCompression.swift in Sources */,
+				4D322C7978617308B276D6F4902C2335 /* WSEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8046880912BD5C2F253B6B85ADDF75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808BEF69BF609D50156963749B54B0BD /* SocketRocket-dummy.m in Sources */,
+				DD329B3EDA6FF6B4AB69726ADF8984DE /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99C8730CCFB40EF25F25C056C20028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2858BF09CE1E70655D0CEAD98B1CF37E /* Pods-KurentoDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		197691A21299308951FDE96064F4CB14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			target = 99A737B746331762ACD053E5EF1415F7 /* SBJson */;
+			targetProxy = 7BD9C98291B7056A31DDF2F92C3B2CE0 /* PBXContainerItemProxy */;
+		};
+		2AD5A50C989676F1817C3FCF1D48E0B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			target = 99A737B746331762ACD053E5EF1415F7 /* SBJson */;
+			targetProxy = BDB2C63E3076525DDAC946DD6E384EB2 /* PBXContainerItemProxy */;
+		};
+		2E94EDDB8E7AF386F8D78733A1CEE0AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = DD7147E85FE3D8715765F22379FCA5CA /* PBXContainerItemProxy */;
+		};
+		2F1847A897F9AEC43BC2F8FC76B1A3AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 7730EF1DC9076F88748373842A4A1579 /* PBXContainerItemProxy */;
+		};
+		39039168A3C2CB70CB2E372F09090198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 1F049ECC84366D84298849FC8691336F /* PBXContainerItemProxy */;
+		};
+		40449EA60D92990E772FEA0E324FF142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 510265017DF0F355A11500EB499FD94F /* PBXContainerItemProxy */;
+		};
+		4562C50ADE196EA540C95DFC055E6C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KurentoToolbox;
+			target = EDCFFCAF28563213A5C17E07D76361FA /* KurentoToolbox */;
+			targetProxy = FDAE7B002A8EA798DF33FE380634E89A /* PBXContainerItemProxy */;
+		};
+		48B977D5E3CC6444DD0E69E9D845FE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KurentoDemo";
+			target = BBAFCF5B0AD64BA0720649E90652F84A /* Pods-KurentoDemo */;
+			targetProxy = E09C072E82A8436DFE53998A1C069EE9 /* PBXContainerItemProxy */;
+		};
+		8ECF735F488C3561E843ECA9C88ADE19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 4583C21A11B1107EEDB902CB35F51EF1 /* PBXContainerItemProxy */;
+		};
+		9DD888FDDB062C3D16DF10174C0A3011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 910F59AC4B473C0E5E34762FECAD1005 /* PBXContainerItemProxy */;
+		};
+		A5D30C08C79D98207679E2BF7E4D07EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KurentoToolbox;
+			target = EDCFFCAF28563213A5C17E07D76361FA /* KurentoToolbox */;
+			targetProxy = C52B3F4AC493158BF0D87FBA09124F0A /* PBXContainerItemProxy */;
+		};
+		BB80067659CDB7F6A6F884F5ED3F664F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = F29F1437946197862B80DA9AE75333F8 /* PBXContainerItemProxy */;
+		};
+		EEA7947342EDAFCDF01D2641CBD72D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			target = 99A737B746331762ACD053E5EF1415F7 /* SBJson */;
+			targetProxy = 99BEC621E2CCD83A0AE9F8FEED54F8F8 /* PBXContainerItemProxy */;
+		};
+		FB01064AFD5E83BD430B7FCD48B85A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 41C49E4D6D0026E4D2AE2EA90F174372 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D58C40E58972194DF9448862D67A5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A050A816CBAD3A62D6F0C2E13D9EE430 /* CocoaLumberjack.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F5CE9157A6944C572608740FA41A6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		39FDD0D4508A0578D9E81D27AFF2C364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5B0CD16CFFE35AE98F5D2D175E41F3 /* Pods-KurentoDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemoTests/Pods-KurentoDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemoTests/Pods-KurentoDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		543E5B7484D28D953F4A4E193786CC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD05F5840E57273B29D0C3EC7D9444A /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5912F0488CC6553245881D6C630C87C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA21A725A9EAF75C9BD42BC8AE75E0D /* CocoaLumberjack.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		660C6500840A9C9BF482BCD10D132310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310E7CEBC63BE45287B1024E67ED4C41 /* Pods-KurentoDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemo/Pods-KurentoDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemo/Pods-KurentoDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74FE8A8DE8B1DAA967C6B7B6B75CCAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DE6A81DE0EE3AC4AB5F425B41A1214 /* Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests/Pods-KurentoDemo-KurentoDemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests/Pods-KurentoDemo-KurentoDemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92BFD8E7F8931CCA220E414412317D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636304B0D51E85409C4242924EA526DC /* SocketRocket.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98EE229621F3BA58B87EA61333DC1FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18183837E96E486BE3211744C0BB375D /* SocketRocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/SocketRocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B67A45D8B1A2252DF15796241EA02F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D924339EE08E8EB081AA7563CC323213 /* SBJson.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBJson/SBJson-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SBJson/SBJson.modulemap";
+				PRODUCT_MODULE_NAME = SBJson;
+				PRODUCT_NAME = SBJson;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B102853BB3392A16E68667C38114BC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B65695347FDCAD021EA1513188D8B4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57955E23708D8FEFB4F94D966C74694C /* KurentoToolbox.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/KurentoToolbox/KurentoToolbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox.modulemap";
+				PRODUCT_MODULE_NAME = KurentoToolbox;
+				PRODUCT_NAME = KurentoToolbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6AE2643621E9E8617A009966908510E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73BFF88C016FACCC42DAED1E7AE0D653 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C19656491E6952A4CDAE0047430E13AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE26F552EDF6C8AA64F8AA908D59B191 /* Pods-KurentoDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemoTests/Pods-KurentoDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemoTests/Pods-KurentoDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9FBF9797655316B974008BF4F7D55E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD15606783DCE8BCA8BE9F011D7FD3DC /* KurentoToolbox.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/KurentoToolbox/KurentoToolbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KurentoToolbox/KurentoToolbox.modulemap";
+				PRODUCT_MODULE_NAME = KurentoToolbox;
+				PRODUCT_NAME = KurentoToolbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEA577D8B39620BE405159ACF33CB5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A748F92F7F3C8D8D16E9529E397F31 /* SBJson.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SBJson/SBJson-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SBJson/SBJson.modulemap";
+				PRODUCT_MODULE_NAME = SBJson;
+				PRODUCT_NAME = SBJson;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F12B312979A4F8C2BA24E8BC804C3484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622F51C378335F3D79B7E0006A816D4C /* Pods-KurentoDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemo/Pods-KurentoDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemo/Pods-KurentoDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2E90140625038B5AA4F3F62178FEFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A48A0761AD3E60A36AB761A4C47DE55 /* Pods-KurentoDemo-KurentoDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests/Pods-KurentoDemo-KurentoDemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests/Pods-KurentoDemo-KurentoDemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5CE9157A6944C572608740FA41A6A5 /* Debug */,
+				B102853BB3392A16E68667C38114BC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559ECA96064FF8D4E520C661A9B10569 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543E5B7484D28D953F4A4E193786CC61 /* Debug */,
+				B6AE2643621E9E8617A009966908510E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682563711A32534E0239C82509652691 /* Build configuration list for PBXNativeTarget "SBJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA577D8B39620BE405159ACF33CB5E2 /* Debug */,
+				9B67A45D8B1A2252DF15796241EA02F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2E620C5A1466542B702059751149AC /* Build configuration list for PBXNativeTarget "Pods-KurentoDemo-KurentoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FE8A8DE8B1DAA967C6B7B6B75CCAF1 /* Debug */,
+				F2E90140625038B5AA4F3F62178FEFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5187A41C2FC69FF54F95D563C2CF13 /* Build configuration list for PBXNativeTarget "Pods-KurentoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660C6500840A9C9BF482BCD10D132310 /* Debug */,
+				F12B312979A4F8C2BA24E8BC804C3484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F22D7F96AA8C9A826774A94FFE03D2 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D58C40E58972194DF9448862D67A5BF /* Debug */,
+				5912F0488CC6553245881D6C630C87C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD58CC1EF40757D5D57977F2151B7BFC /* Build configuration list for PBXNativeTarget "Pods-KurentoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FDD0D4508A0578D9E81D27AFF2C364 /* Debug */,
+				C19656491E6952A4CDAE0047430E13AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A44B0D8726385817902408E0941FEA /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98EE229621F3BA58B87EA61333DC1FA2 /* Debug */,
+				92BFD8E7F8931CCA220E414412317D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77556399C79C91EAD86F5845B39DDAA /* Build configuration list for PBXNativeTarget "KurentoToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65695347FDCAD021EA1513188D8B4FB /* Debug */,
+				C9FBF9797655316B974008BF4F7D55E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

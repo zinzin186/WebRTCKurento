@@ -20,7 +20,7 @@
 #import "NBMTypes.h"
 #import "WebRTC/RTCPeerConnection.h"
 #import "WebRTC/RTCCameraVideoCapturer.h"
-
+#import <WebRTC/RTCFileVideoCapturer.h>
 @class NBMWebRTCPeer;
 @class NBMMediaConfiguration;
 @class NBMPeerConnection;
@@ -81,7 +81,7 @@
 - (void)webRTCPeer:(NBMWebRTCPeer *)peer didAddStream:(RTCMediaStream *)remoteStream ofConnection:(NBMPeerConnection *)connection;
 
 - (void)webRTCPeer:(NBMWebRTCPeer *)peer didCreateLocalCapturer:(RTCCameraVideoCapturer *) capturer;
-
+- (void)webRTCPeer:(NBMWebRTCPeer *)peer didCreateLocalFileCapturer:(RTCFileVideoCapturer *) fileCapturer API_AVAILABLE(ios(10));
 /**
  *  Called when a remote peer close a stream.
  *
