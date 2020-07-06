@@ -26,11 +26,11 @@ enum TypeWebRTC{
     var path: String{
         switch self {
         case .oneToOne:
-            return "one2one"
+            return "/one2one"
         case .room:
-            return "room"
+            return "/room"
         default:
-            return "one2many"
+            return "/one2many"
         }
     }
 }

@@ -24,11 +24,17 @@ class OneToOneViewController: UIViewController {
     }
 
     @IBAction func register(_ sender: Any) {
+        self.view.endEditing(true)
+        WebRTCClient.shared.register(name: self.nameTextField.text!)
     }
     @IBAction func makeCall(_ sender: Any) {
+        let callee = self.calleeTextField.text!
+//        self.onAddLocalStream(videoView: self.localVideoView)
+        WebRTCClient.shared.makeCall(callee: callee)
     }
     
     @IBAction func hangup(_ sender: Any) {
+        WebRTCClient.shared.rejectCall(reason: "Close")
     }
     
 }

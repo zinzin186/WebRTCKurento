@@ -39,6 +39,7 @@ class WebRTCClient: NSObject{
     private var remoteRenderer: NBMRenderer!
     private let webSocket: SRWebSocket
     private var backCamera: Bool = false
+    var isCallOut: Bool = false
     var type: TypeWebRTC = TypeWebRTC.oneToOne
     override init() {
         let url = URL(string: KurentoConfig.urlString + type.path)
@@ -147,6 +148,15 @@ extension WebRTCClient: SRWebSocketDelegate{
                     self.stopCommunication()
                 case "iceCandidate":
                     self.iceCandidate(message: messageDict)
+                //OneToOne
+                case "registerResponse":
+                    if let responseMess = messageDict["response"] as? String, responseMess == "accepted"{
+                        print("Register Success")
+                    }else{
+                        print("Register Error : \(message)")
+                    }
+               
+                    
                 default:
                     break
                 }
@@ -250,7 +260,44 @@ extension WebRTCClient{
     func register(name: String){
         let params = ["id": "register", "name": name]
         let messageString = Convert.dataToString(data: params)
-        self.rtcPeer = RTCPeer(client: self, sessionId: "", isCreator: false)
-        rtcPeer.con
+        self.sendMessage(message: messageString)
+        self.rtcPeer = RTCPeer(client: self, sessionId: name, isCreator: false)
+    }
+    func makeCall(callee: String){
+        self.isCallOut = true
+        self.rtcPeer?.geterateOffer(id: self.rtcPeer!.sessionId)
+        self.localStream = rtcPeer?.webRTCPeer.localStream
+        let videoTrack1 = self.localStream.videoTracks.first
+        let renderType1 = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType
+        if let videoTrack = self.localStream.videoTracks.first, let renderType = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType, renderType == .openGLES{
+            let render = NBMEAGLRenderer(delegate: self)
+            render?.videoTrack = videoTrack
+            self.localRenderer = render
+            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+            
+        }
+    }
+    func acceptCall(){
+        self.isCallOut = false
+        self.rtcPeer?.geterateOffer(id: rtcPeer!.sessionId)
+        self.localStream = rtcPeer?.webRTCPeer.localStream
+        if let videoTrack = self.localStream.videoTracks.first, let renderType = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType, renderType == .openGLES{
+            let render = NBMEAGLRenderer(delegate: self)
+            render?.videoTrack = videoTrack
+            self.localRenderer = render
+            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+            
+        }
+    }
+    func rejectCall(reason: String){
+        print("CurrentId")
+        let params = ["id": "incomingCallResponse","from": rtcPeer!.sessionId, "callResponse": "reject","message": reason]
+        let messageText = Convert.dataToString(data: params)
+        self.sendMessage(message: messageText)
+    }
+    func stopCall(){
+        let params = ["id": "stop"]
+        let messageText = Convert.dataToString(data: params)
+        self.sendMessage(message: messageText)
     }
 }

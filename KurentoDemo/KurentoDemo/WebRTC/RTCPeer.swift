@@ -19,7 +19,8 @@ class RTCPeer: NSObject{
     private let client: WebRTCClient
     private var nICECandidateSocketSendCount: Int = 0
     private var backCamera: Bool = false
-    private var sessionId: String = ""
+    var sessionId: String = ""
+    var localId: String = ""
     let isCreator: Bool
     init(client: WebRTCClient, sessionId: String, isCreator: Bool) {
         self.client = client
