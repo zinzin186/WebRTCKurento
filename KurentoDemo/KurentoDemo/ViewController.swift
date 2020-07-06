@@ -23,6 +23,16 @@ enum TypeWebRTC{
             return "Live Stream"
         }
     }
+    var path: String{
+        switch self {
+        case .oneToOne:
+            return "one2one"
+        case .room:
+            return "room"
+        default:
+            return "one2many"
+        }
+    }
 }
 
 class ViewController: UIViewController {

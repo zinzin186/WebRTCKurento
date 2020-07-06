@@ -23,7 +23,11 @@ enum CallState: Int{
 
 class WebRTCClient: NSObject{
     static let shared = WebRTCClient()
-    var delegate: WebRTCDelegate?
+    
+    private let kChannelTimeoutInterval: TimeInterval = 5.0;
+    private let kChannelKeepaliveInterval: TimeInterval = 20.0;
+    private var keepAliveTimer: Timer?
+    weak var delegate: WebRTCDelegate?
     private var rtcPeer: RTCPeer?
     var streamViewController: StreamViewController!
     private var channelState: TransportChannelState = .closed
@@ -34,22 +38,25 @@ class WebRTCClient: NSObject{
     private var remoteStream: RTCMediaStream!
     private var remoteRenderer: NBMRenderer!
     private let webSocket: SRWebSocket
+    private var backCamera: Bool = false
+    var type: TypeWebRTC = TypeWebRTC.oneToOne
     override init() {
-        
-        let url = URL(string: "https://192.168.51.18:8443/one2many")
-        let webSocket = SRWebSocket(url: url!, protocols: ["chat"])
+        let url = URL(string: KurentoConfig.urlString + type.path)
+        self.channelState = .closed
+        let request: URLRequest = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: kChannelTimeoutInterval)
+        let wSocket = SRWebSocket(urlRequest: request, protocols: ["chat"], allowsUntrustedSSLCertificates: true)
         let queue = DispatchQueue.init(label: "eu.nubomedia.websocket.processing", qos: .background, attributes: .concurrent, autoreleaseFrequency: .never, target: nil)
-        webSocket?.setDelegateDispatchQueue(queue)
-        
-        webSocket?.open()
-        self.webSocket = webSocket!
+        wSocket?.setDelegateDispatchQueue(queue)
+        wSocket?.open()
+        self.webSocket = wSocket!
         super.init()
-        webSocket?.delegate = self
+        self.webSocket.delegate = self
         
     }
     func createStream(sessionId: String){
-//
-        
+        if channelState != .open{
+            self.delegate?.onSocketNotReady()
+        }
         if self.callState != .none{
             return
         }
@@ -68,10 +75,10 @@ class WebRTCClient: NSObject{
         rtcPeer?.geterateOffer(id: sessionId)
     }
     func viewStream(sessionId: String){
-//        if channelState != .open{
-//            self.delegate?.onSocketNotReady()
-//            return
-//        }
+        if channelState != .open{
+            self.delegate?.onSocketNotReady()
+            return
+        }
         if self.callState != .none{
             return
         }
@@ -90,27 +97,33 @@ class WebRTCClient: NSObject{
     }
     func stopStream(){
         let param = ["id": "stop"]
-        self.sendMessage(message: self.converDataToString(data: param))
+        self.sendMessage(message: Convert.dataToString(data: param))
         self.stopCommunication()
     }
-    func converDataToString(data:[String:Any])->String{
-        if let theJSONData = try? JSONSerialization.data(withJSONObject: data,options: []),
-            let theJSONText = String(data: theJSONData,encoding: .utf8) {
-                return theJSONText
-            }
-        return ""
-    }
+    
     func sendMessage(message: String){
-        if channelState == .open{
-            print("send message: \(message)")
-            self.webSocket.send(message)
+        guard channelState == .open else {
+            print("WebSocket not ready")
+            return
         }
+        self.webSocket.send(message)
     }
     func didAddRemoteStream(mediaStream: RTCMediaStream){
         self.remoteStream = mediaStream
         guard let render = self.renderForStream(stream: mediaStream) else {return}
         self.remoteRenderer = render
         self.delegate?.onAddRemoteStream(videoView: self.remoteRenderer.rendererView)
+    }
+    func switchCamera(){
+        self.backCamera.toggle()
+        self.rtcPeer?.selectCamera(backCamera: self.backCamera)
+        if callState != .none{
+            self.localStream = rtcPeer?.webRTCPeer.localStream
+            guard let render = self.renderForStream(stream: self.localStream) else {return}
+            self.localRenderer = render
+            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+            
+        }
     }
 }
 
@@ -148,6 +161,28 @@ extension WebRTCClient: SRWebSocketDelegate{
     func webSocketDidOpen(_ webSocket: SRWebSocket!) {
         DispatchQueue.main.async {
             self.channelState = .open
+            self.scheduleTimer()
+        }
+    }
+}
+extension WebRTCClient{
+    private func scheduleTimer(){
+        self.invalidateTimer()
+        let timer = Timer(timeInterval: self.kChannelKeepaliveInterval, target: self, selector: #selector(handlePingTimer), userInfo: nil, repeats: false)
+        RunLoop.main.add(timer, forMode: .common)
+        self.keepAliveTimer = timer
+    }
+    private func invalidateTimer(){
+        self.keepAliveTimer?.invalidate()
+        self.keepAliveTimer = nil
+    }
+    @objc private func handlePingTimer(){
+        self.sendPing()
+        self.scheduleTimer()
+    }
+    private func sendPing(){
+        if webSocket.readyState == .OPEN{
+            self.webSocket.sendPing(nil)
         }
     }
 }
@@ -193,7 +228,6 @@ extension WebRTCClient{
         guard let cadidateObject = message["candidate"] as? [String: Any] else {return}
         guard let sdpMid = cadidateObject["sdpMid"] as? String else {return}
         guard let sdpMLineIndex = cadidateObject["sdpMLineIndex"] as? Int32 else {return}
-        guard let sdp = cadidateObject["candidate"] as? String else {return}
         let candidate = RTCIceCandidate(sdp: sdpMid, sdpMLineIndex: sdpMLineIndex, sdpMid: sdpMid)
         rtcPeer?.addICECandidate(candidate: candidate)
     }
@@ -211,4 +245,12 @@ extension WebRTCClient{
         }
     }
     
+}
+extension WebRTCClient{
+    func register(name: String){
+        let params = ["id": "register", "name": name]
+        let messageString = Convert.dataToString(data: params)
+        self.rtcPeer = RTCPeer(client: self, sessionId: "", isCreator: false)
+        rtcPeer.con
+    }
 }

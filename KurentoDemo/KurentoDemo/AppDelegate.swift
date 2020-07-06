@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-        let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let vc = OneToOneViewController(nibName: "OneToOneViewController", bundle: nil)
         let navi = UINavigationController(rootViewController: vc)
         self.window?.rootViewController = navi
         let navigationBar = UINavigationBar.appearance()

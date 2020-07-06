@@ -1,0 +1,89 @@
+//
+//  OneToOneViewController.swift
+//  KurentoDemo
+//
+//  Created by Admin on 7/6/20.
+//  Copyright © 2020 Din Vu Dinh. All rights reserved.
+//
+
+import UIKit
+
+class OneToOneViewController: UIViewController {
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var calleeTextField: UITextField!
+    @IBOutlet weak var remoteVideoView: UIView!
+    @IBOutlet weak var localVideoView: UIView!
+    private var localVideo: UIView?
+    private var removeVideo: UIView?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        WebRTCClient.shared.delegate = self
+    }
+
+    @IBAction func register(_ sender: Any) {
+    }
+    @IBAction func makeCall(_ sender: Any) {
+    }
+    
+    @IBAction func hangup(_ sender: Any) {
+    }
+    
+}
+extension OneToOneViewController: WebRTCDelegate{
+    func onStreamCreated() {
+        //
+    }
+    
+    func onStopCommunication() {
+        //
+    }
+    
+    func onAddLocalStream(videoView: UIView) {
+        if localVideo != nil{
+            localVideo?.removeFromSuperview()
+        }
+        self.localVideo = videoView
+        self.localVideo?.addViewToSuperView(superV: self.localVideoView)
+    }
+    
+    func onRemoveLocalStream() {
+        if localVideo != nil{
+            localVideo?.removeFromSuperview()
+        }
+        localVideo = nil
+    }
+    
+    func onAddRemoteStream(videoView: UIView) {
+        if removeVideo != nil{
+            removeVideo?.removeFromSuperview()
+        }
+        self.removeVideo = videoView
+        self.remoteVideoView.addSubview(self.removeVideo!)
+        self.removeVideo?.frame = self.remoteVideoView.bounds
+    }
+    
+    func onRemoveRemoteStream() {
+        //
+    }
+    
+    func onCreateFailed(message: String) {
+        //
+    }
+    
+    func onViewFailed(message: String) {
+        //
+    }
+    
+    func onSocketOpenFailed() {
+        //
+    }
+    
+    func onSocketNotReady() {
+        //
+    }
+    
+    
+}

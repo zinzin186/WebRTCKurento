@@ -16,19 +16,27 @@ class StreamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         WebRTCClient.shared.delegate = self
         WebRTCClient.shared.streamViewController = self
         self.createStreaming()
-    }
-
-    @IBAction func startStreaming(_ sender: Any) {
-        self.createStreaming()
+        self.setupNavigation()
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         WebRTCClient.shared.stopStream()
     }
+    private func setupNavigation(){
+        let witchButton = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(witchCamera))
+        self.navigationItem.rightBarButtonItem = witchButton
+    }
+    @objc private func witchCamera(){
+        WebRTCClient.shared.switchCamera()
+    }
+    
+    @IBAction func startStreaming(_ sender: Any) {
+        self.createStreaming()
+    }
+    
     private func createStreaming(){
         let interval = Date().timeIntervalSince1970
         let sessionId = "\(interval)"
@@ -37,6 +45,7 @@ class StreamViewController: UIViewController {
     }
     @IBAction func finishStreaming(_ sender: Any) {
         WebRTCClient.shared.stopStream()
+        
     }
     
 }
@@ -54,8 +63,7 @@ extension StreamViewController: WebRTCDelegate{
             localVideo?.removeFromSuperview()
         }
         self.localVideo = videoView
-        self.streamingVideoView.addSubview(self.localVideo!)
-        self.localVideo?.frame = self.streamingVideoView.bounds
+        self.localVideo?.addViewToSuperView(superV: self.streamingVideoView)
     }
     
     func onRemoveLocalStream() {
@@ -90,4 +98,14 @@ extension StreamViewController: WebRTCDelegate{
     }
     
     
+}
+extension UIView{
+    func addViewToSuperView(superV: UIView){
+        superV.addSubview(self)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.leftAnchor.constraint(equalTo: superV.leftAnchor).isActive = true
+        self.rightAnchor.constraint(equalTo: superV.rightAnchor).isActive = true
+        self.topAnchor.constraint(equalTo: superV.topAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: superV.bottomAnchor).isActive = true
+    }
 }

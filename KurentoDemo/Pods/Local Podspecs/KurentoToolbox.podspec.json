@@ -47,6 +47,9 @@
       "source_files": "Classes/WebRTC/**/*.{h,m}",
       "public_header_files": "Classes/WebRTC/*.h",
       "dependencies": {
+        "GoogleWebRTC": [
+
+        ],
         "KurentoToolbox/Utils": [
 
         ]

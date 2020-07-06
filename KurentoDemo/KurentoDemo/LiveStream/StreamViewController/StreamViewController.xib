@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StreamViewController" customModule="LiveStreamDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StreamViewController" customModule="KurentoDemo" customModuleProvider="target">
             <connections>
                 <outlet property="sessionLabel" destination="NpS-C7-zEu" id="kJb-jb-5kf"/>
                 <outlet property="streamingVideoView" destination="Mfk-Bx-4gj" id="Nm4-Dp-KRR"/>
@@ -68,10 +68,10 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-Bx-4gj">
                     <rect key="frame" x="0.0" y="134" width="414" height="728"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mfk-Bx-4gj" secondAttribute="bottom" id="Dnn-CC-XTe"/>
                 <constraint firstItem="mbs-F1-WPy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HaW-tW-DQg"/>

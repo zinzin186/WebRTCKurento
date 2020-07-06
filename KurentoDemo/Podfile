@@ -5,7 +5,7 @@ target 'KurentoDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'KurentoToolbox', :path => "/My\ Data/Souce/Framework/WebRTCKurento/KurentoToolbox"
+  pod 'KurentoToolbox', :path => "/Zinzin\'s\ data/My\ souce/Framework/WebRTCKurento/KurentoToolbox"
   pod 'Starscream'
 
   target 'KurentoDemoTests' do

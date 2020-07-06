@@ -31,8 +31,8 @@ class RTCPeer: NSObject{
         self.webRTCPeer = NBMWebRTCPeer(delegate: self, configuration: mediaConfig)
         
     }
+    
     func selectCamera(backCamera: Bool){
-        let abc = NSString()
         self.backCamera = backCamera
         let cameraPosition = backCamera ? NBMCameraPosition.back : NBMCameraPosition.front
         if webRTCPeer.hasCameraPositionAvailable(cameraPosition){
@@ -92,30 +92,18 @@ extension RTCPeer: NBMWebRTCPeerDelegate{
         
         
         self.capturer = capturer
-        let position: AVCaptureDevice.Position = AVCaptureDevice.Position.front
+        let position: AVCaptureDevice.Position = self.backCamera ? AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
         guard let device = self.findDeviceForPosition(position: position) else { return }
 
         let format = self.selectFormatForDevice(device: device)
-        let fps = 60
+        let fps = self.selectFpsForFormat(format: format)
         print("fps: \(fps)")
         capturer.startCapture(with: device,
                                           format: format,
                                           fps: fps)
         
     }
-    func startCaptureLocalVideo(renderer: RTCVideoRenderer) {
-            let position: AVCaptureDevice.Position = AVCaptureDevice.Position.front
-            guard let device = self.findDeviceForPosition(position: position) else { return }
-
-                        let format = self.selectFormatForDevice(device: device)
-            //            let fps = self.selectFpsForFormat(format: format)
-                        let fps = 10
-                        print("fps: \(fps)")
-                        capturer.startCapture(with: device,
-                                              format: format,
-                                              fps: fps)
-
-        }
+    
     func webrtcPeer(_ peer: NBMWebRTCPeer!, iceStatusChanged state: RTCIceConnectionState, of connection: NBMPeerConnection!) {
         //
     }

@@ -7,6 +7,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.2.0):
     - CocoaLumberjack/Default
+  - GoogleWebRTC (1.1.29400)
   - KurentoToolbox (0.6.0):
     - KurentoToolbox/Default (= 0.6.0)
   - KurentoToolbox/Default (0.6.0):
@@ -29,33 +30,37 @@ PODS:
   - KurentoToolbox/Utils (0.6.0):
     - CocoaLumberjack (~> 2.2.0)
   - KurentoToolbox/WebRTC (0.6.0):
+    - GoogleWebRTC
     - KurentoToolbox/Utils
   - SBJson (4.0.5)
   - SocketRocket (0.4.2)
   - Starscream (4.0.3)
 
 DEPENDENCIES:
-  - KurentoToolbox (from `/My Data/Souce/Framework/WebRTCKurento/KurentoToolbox`)
+  - "KurentoToolbox (from `/Zinzin's data/My souce/Framework/WebRTCKurento/KurentoToolbox`)"
   - Starscream
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
+    - Starscream
+  https://github.com/cocoapods/specs.git:
     - CocoaLumberjack
+    - GoogleWebRTC
     - SBJson
     - SocketRocket
-    - Starscream
 
 EXTERNAL SOURCES:
   KurentoToolbox:
-    :path: "/My Data/Souce/Framework/WebRTCKurento/KurentoToolbox"
+    :path: "/Zinzin's data/My souce/Framework/WebRTCKurento/KurentoToolbox"
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
-  KurentoToolbox: c1b369e2a77bd6124c95d554ddf3911b8986aaa9
+  GoogleWebRTC: cfb83bc346435a17fe06bb05f04ad826b858a7fb
+  KurentoToolbox: e04fe938633a05f81f5336d295b860552c119225
   SBJson: af3137ccda22be3004487524da0a071c75d4251b
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   Starscream: ef06f0961fff0880bca0604416d61141e4faca67
 
-PODFILE CHECKSUM: fc2b233968fcddefce1eff88fe649717ff92a7d5
+PODFILE CHECKSUM: bf7c51dcb7815f0a762459d8bcde31e533732677
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.7.5

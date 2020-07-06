@@ -13,17 +13,17 @@ def common_target_pods
 end
 
 target 'KurentoToolbox-Static' do
-    xcodeproj 'Kurento-iOS'
+    project 'Kurento-iOS'
     common_target_pods
 end
 
 target 'KurentoToolbox-Tests' do
-    xcodeproj 'Kurento-iOS'
+    project 'Kurento-iOS'
     pod 'KurentoToolbox', :path => "."
 end
 
 target 'KurentoToolboxDemo' do
-    xcodeproj 'KurentoToolboxDemo/KurentoToolboxDemo'
+    project 'KurentoToolboxDemo/KurentoToolboxDemo'
     pod 'KurentoToolbox', :path => "."
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'Reachability', '~> 3.2'

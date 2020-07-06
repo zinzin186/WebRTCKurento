@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		80AAA8DC66555A247198F68A /* Pods_KurentoDemo_KurentoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D37D0FD428179ABC9187BAF /* Pods_KurentoDemo_KurentoDemoUITests.framework */; };
 		8418F711D948F3C8AF8BF6BE /* Pods_KurentoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F66DB11D7ECB6DBC8CAB319 /* Pods_KurentoDemo.framework */; };
+		8467E39624B2D93F00CF45AD /* KurentoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467E39524B2D93F00CF45AD /* KurentoConfig.swift */; };
+		8467E39824B2DD8600CF45AD /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467E39724B2DD8600CF45AD /* Convert.swift */; };
+		8467E39C24B31A5D00CF45AD /* OneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467E39A24B31A5C00CF45AD /* OneToOneViewController.swift */; };
+		8467E39D24B31A5D00CF45AD /* OneToOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8467E39B24B31A5C00CF45AD /* OneToOneViewController.xib */; };
 		96CB2CAA24B1A6F400F026B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB2CA924B1A6F400F026B7 /* AppDelegate.swift */; };
 		96CB2CAE24B1A6F400F026B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB2CAD24B1A6F400F026B7 /* ViewController.swift */; };
 		96CB2CB124B1A6F400F026B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CB2CAF24B1A6F400F026B7 /* Main.storyboard */; };
@@ -62,6 +66,10 @@
 		5E4877ECBB514C9C11AD9740 /* Pods-KurentoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoDemo.release.xcconfig"; path = "Target Support Files/Pods-KurentoDemo/Pods-KurentoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6D8BE2AC1FB666B26072F2F7 /* Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-KurentoDemo-KurentoDemoUITests/Pods-KurentoDemo-KurentoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F56F0C2509726E1DC29984E /* Pods-KurentoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurentoDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-KurentoDemoTests/Pods-KurentoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8467E39524B2D93F00CF45AD /* KurentoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurentoConfig.swift; sourceTree = "<group>"; };
+		8467E39724B2DD8600CF45AD /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		8467E39A24B31A5C00CF45AD /* OneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneViewController.swift; sourceTree = "<group>"; };
+		8467E39B24B31A5C00CF45AD /* OneToOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneToOneViewController.xib; sourceTree = "<group>"; };
 		96CB2CA624B1A6F400F026B7 /* KurentoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KurentoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CB2CA924B1A6F400F026B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CB2CAD24B1A6F400F026B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +142,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8467E39424B2D92800CF45AD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8467E39524B2D93F00CF45AD /* KurentoConfig.swift */,
+				8467E39724B2DD8600CF45AD /* Convert.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8467E39924B31A4200CF45AD /* OneToOne */ = {
+			isa = PBXGroup;
+			children = (
+				8467E39A24B31A5C00CF45AD /* OneToOneViewController.swift */,
+				8467E39B24B31A5C00CF45AD /* OneToOneViewController.xib */,
+			);
+			path = OneToOne;
+			sourceTree = "<group>";
+		};
 		96CB2C9D24B1A6F400F026B7 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +185,8 @@
 		96CB2CA824B1A6F400F026B7 /* KurentoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8467E39924B31A4200CF45AD /* OneToOne */,
+				8467E39424B2D92800CF45AD /* Config */,
 				96FBD40524B1D838002708DC /* Room */,
 				96CB2CFF24B1BB4600F026B7 /* KurentoDemo-Bridging-Header.h */,
 				96CB2CFE24B1B66600F026B7 /* LiveStream */,
@@ -391,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8467E39D24B31A5D00CF45AD /* OneToOneViewController.xib in Resources */,
 				96CB2CFD24B1B65D00F026B7 /* sample.mp4 in Resources */,
 				96CB2CF124B1B65D00F026B7 /* StreamViewController.xib in Resources */,
 				96FBD40A24B1D85B002708DC /* RoomViewController.xib in Resources */,
@@ -530,15 +559,18 @@
 				96CB2CF224B1B65D00F026B7 /* ViewerViewController.swift in Sources */,
 				96FBD40924B1D85B002708DC /* RoomViewController.swift in Sources */,
 				96CB2CF724B1B65D00F026B7 /* RTCPeer.swift in Sources */,
+				8467E39624B2D93F00CF45AD /* KurentoConfig.swift in Sources */,
 				96CB2CF024B1B65D00F026B7 /* StreamViewController.swift in Sources */,
 				96FBD45524B24060002708DC /* HomeViewController.swift in Sources */,
 				96CB2CAE24B1A6F400F026B7 /* ViewController.swift in Sources */,
 				96CB2CF524B1B65D00F026B7 /* WebRTCDelegate.swift in Sources */,
+				8467E39824B2DD8600CF45AD /* Convert.swift in Sources */,
 				96CB2CF924B1B65D00F026B7 /* RTCCapturerSettingsModel.swift in Sources */,
 				96CB2CB424B1A6F400F026B7 /* KurentoDemo.xcdatamodeld in Sources */,
 				96CB2CF824B1B65D00F026B7 /* AVCaptureState.swift in Sources */,
 				96CB2CF424B1B65D00F026B7 /* SocketManager.swift in Sources */,
 				96CB2CAA24B1A6F400F026B7 /* AppDelegate.swift in Sources */,
+				8467E39C24B31A5D00CF45AD /* OneToOneViewController.swift in Sources */,
 				96CB2CFA24B1B65D00F026B7 /* WebRTCClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

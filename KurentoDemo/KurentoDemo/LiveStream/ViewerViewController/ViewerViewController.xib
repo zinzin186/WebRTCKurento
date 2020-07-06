@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewerViewController" customModule="LiveStreamDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewerViewController" customModule="KurentoDemo" customModuleProvider="target">
             <connections>
                 <outlet property="remoteVideoView" destination="e9u-Rn-RWt" id="Sx6-wY-9Pd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="sCc-lq-Vi9"/>
@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6B-7c-GcJ">
-                    <rect key="frame" x="0.0" y="84" width="414" height="44"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIS-4L-UFX">
                             <rect key="frame" x="0.0" y="0.0" width="207" height="44"/>
@@ -52,14 +52,14 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-Rn-RWt">
-                    <rect key="frame" x="0.0" y="128" width="414" height="724"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="L6B-7c-GcJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="1fr-C5-ZkJ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="e9u-Rn-RWt" secondAttribute="bottom" constant="10" id="A5V-fy-RXm"/>
+                <constraint firstItem="L6B-7c-GcJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1fr-C5-ZkJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="e9u-Rn-RWt" secondAttribute="bottom" id="A5V-fy-RXm"/>
                 <constraint firstItem="e9u-Rn-RWt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FvN-gQ-CsS"/>
                 <constraint firstItem="L6B-7c-GcJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X7G-AV-qzc"/>
                 <constraint firstItem="e9u-Rn-RWt" firstAttribute="top" secondItem="L6B-7c-GcJ" secondAttribute="bottom" id="ghs-Fo-ZRa"/>

@@ -2,7 +2,7 @@ target 'KurentoToolboxDemo' do
 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-pod 'KurentoToolbox', :path => "/My\ Data/Souce/Framework/KurentoToolbox"
+pod 'KurentoToolbox', :path => "."
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'DGActivityIndicatorView'
 pod 'Masonry'
