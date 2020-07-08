@@ -40,7 +40,6 @@ class WebRTCClient: NSObject{
     private let webSocket: SRWebSocket
     private var backCamera: Bool = false
     var isCallOut: Bool = false
-    var currentFrom: String  = ""
     var calleeId: String = ""
     var type: TypeWebRTC = TypeWebRTC.oneToOne
     override init() {
@@ -109,6 +108,7 @@ class WebRTCClient: NSObject{
             print("WebSocket not ready")
             return
         }
+        print("send message: $$$$$$$$\(message)")
         self.webSocket.send(message)
     }
     func didAddRemoteStream(mediaStream: RTCMediaStream){
@@ -169,7 +169,7 @@ extension WebRTCClient: SRWebSocketDelegate{
                 default:
                     break
                 }
-                print("message la: \(messageDict)")
+//                print("message ######\(id) la : \(messageDict)")
             } catch {
                 // Handle error
                 print(error)
@@ -326,9 +326,8 @@ extension WebRTCClient{
 extension WebRTCClient{
     func incoming(message: [String: Any]){
         guard let from = message["from"] as? String else {return}
-        self.currentFrom = from
         print("Check lai ham nay")
-        self.rtcPeer?.fromUserId = currentFrom
+        self.rtcPeer?.fromUserId = from
         self.delegate?.onCallReceived(from: from)
         
     }
