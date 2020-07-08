@@ -29,7 +29,7 @@ class WebRTCClient: NSObject{
     private var keepAliveTimer: Timer?
     weak var delegate: WebRTCDelegate?
     private var rtcPeer: RTCPeer?
-    var streamViewController: StreamViewController!
+    var streamViewController: StreamViewController?
     private var channelState: TransportChannelState = .closed
     private var callState: CallState = .none
     private var sessionId: String = ""
@@ -40,6 +40,8 @@ class WebRTCClient: NSObject{
     private let webSocket: SRWebSocket
     private var backCamera: Bool = false
     var isCallOut: Bool = false
+    var currentFrom: String  = ""
+    var calleeId: String = ""
     var type: TypeWebRTC = TypeWebRTC.oneToOne
     override init() {
         let url = URL(string: KurentoConfig.urlString + type.path)
@@ -138,6 +140,7 @@ extension WebRTCClient: SRWebSocketDelegate{
             }
             do {
                 guard let messageDict = try JSONSerialization.jsonObject(with: objectData, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: Any] else {return}
+                
                 guard let id = messageDict["id"] as? String else {return}
                 switch id{
                 case "presenterResponse":
@@ -147,6 +150,7 @@ extension WebRTCClient: SRWebSocketDelegate{
                 case "stopCommunication":
                     self.stopCommunication()
                 case "iceCandidate":
+                    print("Nhan iceCandidate")
                     self.iceCandidate(message: messageDict)
                 //OneToOne
                 case "registerResponse":
@@ -155,12 +159,17 @@ extension WebRTCClient: SRWebSocketDelegate{
                     }else{
                         print("Register Error : \(message)")
                     }
-               
+                case "incomingCall":
+                    print("Co cuoc goi den")
+                    self.incoming(message: messageDict)
+                case "startCommunication":
+                    print("startCommunication")
+                    self.startCommunication(message: messageDict)
                     
                 default:
                     break
                 }
-
+                print("message la: \(messageDict)")
             } catch {
                 // Handle error
                 print(error)
@@ -265,29 +274,40 @@ extension WebRTCClient{
     }
     func makeCall(callee: String){
         self.isCallOut = true
-        self.rtcPeer?.geterateOffer(id: self.rtcPeer!.sessionId)
-        self.localStream = rtcPeer?.webRTCPeer.localStream
-        let videoTrack1 = self.localStream.videoTracks.first
-        let renderType1 = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType
-        if let videoTrack = self.localStream.videoTracks.first, let renderType = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType, renderType == .openGLES{
-            let render = NBMEAGLRenderer(delegate: self)
-            render?.videoTrack = videoTrack
-            self.localRenderer = render
-            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
-            
+        if rtcPeer?.webRTCPeer.startLocalMedia() ?? false{
+            self.rtcPeer?.calleeId = callee
+            self.rtcPeer?.geterateOffer(id: self.rtcPeer!.sessionId)
+            rtcPeer?.selectCamera(backCamera: false)
+            self.localStream = rtcPeer?.webRTCPeer.localStream
+            if let render = self.renderForStream(stream: self.localStream){
+                self.localRenderer = render
+                self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+            }
         }
+        
+        
+        
+//        guard self.localStream != nil else {return}
+//        if let videoTrack = self.localStream.videoTracks.first, let renderType = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType, renderType == .openGLES{
+//            let render = NBMEAGLRenderer(delegate: self)
+//            render?.videoTrack = videoTrack
+//            self.localRenderer = render
+//            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+//
+//        }
     }
     func acceptCall(){
         self.isCallOut = false
-        self.rtcPeer?.geterateOffer(id: rtcPeer!.sessionId)
-        self.localStream = rtcPeer?.webRTCPeer.localStream
-        if let videoTrack = self.localStream.videoTracks.first, let renderType = rtcPeer?.webRTCPeer.mediaConfiguration.rendererType, renderType == .openGLES{
-            let render = NBMEAGLRenderer(delegate: self)
-            render?.videoTrack = videoTrack
-            self.localRenderer = render
-            self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
-            
+        if rtcPeer?.webRTCPeer.startLocalMedia() ?? false{
+            self.rtcPeer?.geterateOffer(id: rtcPeer!.sessionId)
+            rtcPeer?.selectCamera(backCamera: false)
+            self.localStream = rtcPeer?.webRTCPeer.localStream
+            if let render = self.renderForStream(stream: self.localStream){
+                self.localRenderer = render
+                self.delegate?.onAddLocalStream(videoView: self.localRenderer.rendererView)
+            }
         }
+        
     }
     func rejectCall(reason: String){
         print("CurrentId")
@@ -299,5 +319,28 @@ extension WebRTCClient{
         let params = ["id": "stop"]
         let messageText = Convert.dataToString(data: params)
         self.sendMessage(message: messageText)
+    }
+    
+    
+}
+extension WebRTCClient{
+    func incoming(message: [String: Any]){
+        guard let from = message["from"] as? String else {return}
+        self.currentFrom = from
+        print("Check lai ham nay")
+        self.rtcPeer?.fromUserId = currentFrom
+        self.delegate?.onCallReceived(from: from)
+        
+    }
+    func startCommunication(message: [String: Any]){
+        guard let sdpAnswer = message["sdpAnswer"] as? String else {return}
+        self.rtcPeer?.processAnswer(sdpAnswer: sdpAnswer)
+        
+    }
+    
+    func didRemoveRemoteStream(){
+        self.remoteStream = nil
+        self.remoteRenderer = nil
+        self.delegate?.onRemoveRemoteStream()
     }
 }

@@ -30,6 +30,7 @@ class OneToOneViewController: UIViewController {
     @IBAction func makeCall(_ sender: Any) {
         let callee = self.calleeTextField.text!
 //        self.onAddLocalStream(videoView: self.localVideoView)
+        self.view.endEditing(true)
         WebRTCClient.shared.makeCall(callee: callee)
     }
     
@@ -39,6 +40,14 @@ class OneToOneViewController: UIViewController {
     
 }
 extension OneToOneViewController: WebRTCDelegate{
+    func onCallReceived(from: String) {
+        let alert = UIAlertController(title: "Cuoc goi", message: "Co nguoi goi den", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { (_) in
+            WebRTCClient.shared.acceptCall()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func onStreamCreated() {
         //
     }

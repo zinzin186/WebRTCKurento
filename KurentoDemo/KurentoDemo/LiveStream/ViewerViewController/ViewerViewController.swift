@@ -40,6 +40,10 @@ extension ViewerViewController{
     }
 }
 extension ViewerViewController: WebRTCDelegate{
+    func onCallReceived(from: String) {
+        //
+    }
+    
     func onStreamCreated() {
         //
     }

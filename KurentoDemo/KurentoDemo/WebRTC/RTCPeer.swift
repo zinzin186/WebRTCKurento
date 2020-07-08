@@ -19,8 +19,10 @@ class RTCPeer: NSObject{
     private let client: WebRTCClient
     private var nICECandidateSocketSendCount: Int = 0
     private var backCamera: Bool = false
+    var type: TypeWebRTC = TypeWebRTC.oneToOne
     var sessionId: String = ""
-    var localId: String = ""
+    var fromUserId: String = ""
+    var calleeId: String = ""
     let isCreator: Bool
     init(client: WebRTCClient, sessionId: String, isCreator: Bool) {
         self.client = client
@@ -28,6 +30,7 @@ class RTCPeer: NSObject{
         self.isCreator = isCreator
         settingsModel = RTCCapturerSettingsModel()
         super.init()
+        self.fromUserId = sessionId
         let mediaConfig = NBMMediaConfiguration.default()
         self.webRTCPeer = NBMWebRTCPeer(delegate: self, configuration: mediaConfig)
         
@@ -111,17 +114,42 @@ extension RTCPeer: NBMWebRTCPeerDelegate{
     
     func webRTCPeer(_ peer: NBMWebRTCPeer!, didGenerateOffer sdpOffer: RTCSessionDescription!, for connection: NBMPeerConnection!) {
         print("didGenerateOffer")
-        var payload = [String: Any]()
-        payload["id"] = self.isCreator ? "presenter":"viewer"
-        payload["session"] = self.sessionId
-        payload["sdpOffer"] = sdpOffer.description
-        self.client.sendMessage(message: self.converDataToString(data: payload))
+        switch type {
+        case .room:
+            var payload = [String: Any]()
+            payload["id"] = self.isCreator ? "presenter":"viewer"
+            payload["session"] = self.sessionId
+            payload["sdpOffer"] = sdpOffer.description
+            self.client.sendMessage(message: self.converDataToString(data: payload))
+        case .oneToOne:
+            var payload = [String: Any]()
+            payload["id"] = self.client.isCallOut ? "call":"incomingCallResponse"
+            payload["from"] = self.fromUserId
+            payload["sdpOffer"] = sdpOffer.description
+            if self.client.isCallOut{
+                payload["to"] = self.calleeId
+            }else{
+                payload["callResponse"] = "accept"
+            }
+            self.client.sendMessage(message: self.converDataToString(data: payload))
+        default:
+            break
+        }
                
     }
     
     func webRTCPeer(_ peer: NBMWebRTCPeer!, didGenerateAnswer sdpAnswer: RTCSessionDescription!, for connection: NBMPeerConnection!) {
         print("didGenerateAnswer")
-       
+        
+        var payload = [String: Any]()
+        payload["id"] = "incomingCallResponse"
+        payload["from"] = self.fromUserId
+        payload["to"] = self.calleeId   
+        payload["sdpOffer"] = sdpAnswer.description
+        self.client.sendMessage(message: self.converDataToString(data: payload))
+        
+        
+    
         
         
     }
@@ -138,13 +166,19 @@ extension RTCPeer: NBMWebRTCPeerDelegate{
     
     func webRTCPeer(_ peer: NBMWebRTCPeer!, didAdd remoteStream: RTCMediaStream!, of connection: NBMPeerConnection!) {
         print("didAdd remoteStream")
-        if !self.isCreator{
+        if self.type == .liveStream{
+            if !self.isCreator{
+                self.client.didAddRemoteStream(mediaStream: remoteStream)
+            }
+        }else{
             self.client.didAddRemoteStream(mediaStream: remoteStream)
         }
+        
     }
     
     func webRTCPeer(_ peer: NBMWebRTCPeer!, didRemove remoteStream: RTCMediaStream!, of connection: NBMPeerConnection!) {
         print("didRemove remoteStream")
+        self.client.didRemoveRemoteStream()
     }
     
     func webRTCPeer(_ peer: NBMWebRTCPeer!, didAdd dataChannel: RTCDataChannel!) {
@@ -197,11 +231,11 @@ private extension RTCPeer {
     private func renderLocalVideoView()->RTCVideoRenderer{
         #if arch(arm64)
             // Using metal (arm64 only)
-        let localRenderer = RTCMTLVideoView(frame: self.streamViewController.streamingVideoView.frame)
+        let localRenderer = RTCMTLVideoView(frame: self.streamViewController?.streamingVideoView.frame ?? UIScreen.main.bounds)
             localRenderer.videoContentMode = .scaleAspectFill
         #else
             // Using OpenGLES for the rest
-        let localRenderer = RTCEAGLVideoView(frame: self.streamViewController.streamingVideoView.frame)
+        let localRenderer = RTCEAGLVideoView(frame: self.streamViewController?.streamingVideoView.frame ?? UIScreen.main.bounds)
         #endif
         return localRenderer
     }

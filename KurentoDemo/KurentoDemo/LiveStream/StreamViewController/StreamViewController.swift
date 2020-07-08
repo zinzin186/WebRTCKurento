@@ -50,6 +50,10 @@ class StreamViewController: UIViewController {
     
 }
 extension StreamViewController: WebRTCDelegate{
+    func onCallReceived(from: String) {
+        //
+    }
+    
     func onStreamCreated() {
         //
     }

@@ -19,4 +19,5 @@ protocol WebRTCDelegate: class {
     func onViewFailed(message: String)
     func onSocketOpenFailed()
     func onSocketNotReady()
+    func onCallReceived(from: String)
 }
